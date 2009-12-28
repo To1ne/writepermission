@@ -1,0 +1,6 @@
+RewriteEngine on 
+
+# Redirect github pages to writepermission.com
+RewriteCond %{HTTP_HOST} ^to1ne\.github\.com/writepermission [NC]
+RewriteRule ^\/?$ http://writepermission.com/ [R=301,L]
+
