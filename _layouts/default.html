@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link href="http://feeds.feedburner.com/UnderTheHat-10to1" rel="alternate" title="Under the Hat - A weblog written by 10to1" type="application/atom+xml" />
 	<meta name="robots" content="index,follow" />
 	<meta name="author" content="Toon Claes" />
 	<meta name="copyright" content="Copyright (c) 2009" />
@@ -14,15 +15,23 @@
 	<div id="container">
 		<div id="header">
 			<div id="dasher">
-				<h1 class="pre" >------------------------------------------------------------------------------------------------------------------------------------------</h1>
+				{% assign dasherlen = 150 %}
+				<h1 class="pre">{{ '-' | times:dasherlen }}</h1>
 				<h1 class="title"><a href="/" title="rw-r--r--">rw-r--r--</a></h1>
-				<h1 class="post">------------------------------------------------------------------------------------------------------------------------------------------</h1>
+				<h1 class="post">{{ '-' | times:dasherlen }}</h1>
 				<h2>permitted to write...</h2>
 			</div><!-- #dasher -->
 		</div><!-- #header -->
 		<div id="content">
 			{{ content }}
-		</div>	
+		</div><!-- #content -->
+		<div id="side">
+			<h1>Categories</h1>
+			<ul>
+				<li><a href="#">TODO</a></li>
+			</ul>
+			<h1>Pages<h1>
+		</div><!-- #side -->
 	</div>
 	
 	<script type="text/javascript">
@@ -39,11 +48,11 @@
 	})();
 	//]]>
 	</script>
+
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
-
 	<script type="text/javascript">
 	try{
 	var pageTracker = _gat._getTracker("UA-10186252-3");

@@ -80,7 +80,7 @@ ol, ul {
 	list-style: none;
 }
 ul {
-	list-style: disc;
+	list-style: square;
 	margin: 0 0 21px 2.5em;
 }
 ol {
@@ -250,6 +250,11 @@ hr {
 	margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #B25756;
+	font-family: Georgia,Times,"Times New Roman",serif;
+}
+
 h1 a {
 	color: #751816;
 }
@@ -329,18 +334,14 @@ a {
 * Content
 *************************/
 #content {
+	float: left;
 	margin-top: 200px;
-}
-
-
-h2, h3, h4, h5, h6 {
-	color:#B25756;
-	font-family: Georgia,Times,"Times New Roman",serif;
-	font-weight: bold;
+	width: 580px;
 }
 
 #content h1 {
 	margin-bottom: 5px;
+	font-style: italic;
 }
 
 .postdate {
@@ -351,7 +352,24 @@ h2, h3, h4, h5, h6 {
 /**************************
 * Sidebar
 *************************/
+#side {
+	float: right;
+	margin-top: 200px;
+	width: 300px;
+}
 
+#side h1 {
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+#side ul {
+	color: #B25756;
+}
+
+#side a {
+	color: #751816;
+}
 
 /**************************
 * Pygments highlighting
