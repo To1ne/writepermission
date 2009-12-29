@@ -1,58 +1,77 @@
 --- 
-wordpress_id: 183
 layout: post
 title: Install git on a shared webhost
+wordpress_id: 183
 wordpress_url: http://www.writepermission.com/?p=183
 ---
-<h3>Introduction</h3>
-Recently I ran into an article about using <a href="http://git-scm.com/">git</a> to upload your site (see links at the bottom how to). But off course, this requires to have <code>git</code> installed on your hosting. My host (via <a href="http://www.turtlehost.be/">TurtleHost.be</a>) does not have it. So I was thinking, why not install it myself. Idea sounded more simple than doing it... .
 
-<!--more-->
-<h3>Requirements</h3>
-<ul>
-   <li>You need to have <a href="http://en.wikipedia.org/wiki/Secure_Shell">    ssh</a> access to your server.</li>
-</ul>
-<h3>Finding git</h3>
-Before we can download <code>git</code>, we need to know which Linux distribution your server is using. This is required so the <code>git</code> executable will be able to use the correct libraries.
+## Introduction
+Recently I ran into an article about using [git](http://git-scm.com/) to upload your site (see links at the bottom how to). But off course, this requires to have `git` installed on your hosting. My host (via [TurtleHost.be](http://www.turtlehost.be/)) does not have it. So I was thinking, why not install it myself. Idea sounded more simple than doing it... .
+
+## Requirements
+- You need to have [ssh](http://en.wikipedia.org/wiki/Secure_Shell) access to your server.
+
+## Finding git
+Before we can download `git`, we need to know which Linux distribution your server is using. This is required so the `git` executable will be able to use the correct libraries.
 To find out which kernel your server is running, log in to your server via ssh and type the command:
-<pre lang="bash">cat /etc/*-release</pre>
-On my server this returned <code>CentOS release 5.3 (Final)</code>.
+{% highlight bash %}
+cat /etc/*-release
+{% endhighlight %}
+
+On my server this returned `CentOS release 5.3 (Final)`.
 Next thing we need to know if your server is running 32bit or 64bit. This we can verify with the command:
-<pre lang="bash">uname -p</pre>
-<code>x86_64</code> indicates the server has 64bit kernel running. <code>i386 </code>/<code>i486</code>/<code>i586</code>/<code>i686</code> means it is a 32bit kernel.
+{% highlight bash %}
+uname -p
+{% endhighlight %}
+`x86_64` indicates the server has 64bit kernel running. `i386 `/`i486`/`i586`/`i686` means it is a 32bit kernel.
 
-<h3>Downloading git</h3>
-Next we need to download <code>git</code> from somewhere. Probably you can find it by searching it on a RPM repository. I found one on <a href="http://rpm.pbone.net/">rpm.pbone.net</a> . This site has a great search engine where you can find <code>git</code> version for your server distro.
+## Downloading git
+Next we need to download `git` from somewhere. Probably you can find it by searching it on a RPM repository. I found one on [rpm.pbone.net](http://rpm.pbone.net/). This site has a great search engine where you can find `git` version for your server distro.
 After finding a download link, again log in to your server via ssh and type the following commands:
-<pre lang="bash">mkdir ~/git-download
+{% highlight bash %}
+mkdir ~/git-download
 cd ~/git-download
-wget ftp://the.download.link/of/repo/containing/git-1.6.x.x.rpm</pre>
-Now you have the <code>.rpm</code> on your server.
+wget ftp://the.download.link/of/repo/containing/git-1.6.x.x.rpm
+{% endhighlight %}
+Now you have the `.rpm` on your server.
 
-<h3>Installing git</h3>This <code>rpm</code> needs to be installed, but you won't be able to use the regular <code>rpm</code> installer because this requires root access.
-You can extract the <code>rpm</code> file with the command:
-<pre lang="bash">rpm2cpio git-1.6.x.x.rpm | cpio -imdv </pre>
-This will create a <code>usr/</code> directory in currect directory. You best move this directory to your home root:<pre lang="bash">mv usr ~/usr</pre>
-Now we are almost there, we only need to add the directory to <code>$PATH </code> variable. Doing this will make it possible to execute the command <code>git</code> from anywhere.
-Open your <code>~/.bashrc</code> file with your favorite editor (<code>vim</code> or <code>pico</code>) and add the following line:
-<pre lang="bash">export PATH=$PATH:$HOME/usr/bin:$HOME/usr/libexec/git-core</pre>
-And that's it. To activate this change, run <code>source ~/.bashrc</code> or log out and in again.
+## Installing git
+This `rpm` needs to be installed, but you won't be able to use the regular `rpm` installer because this requires root access.
+You can extract the `rpm` file with the command:
+{% highlight bash %}
+rpm2cpio git-1.6.x.x.rpm | cpio -imdv
+{% endhighlight %}
 
-<h3>Note</h3>
-You can use <code>git</code> just by typing the <code>git</code> command. But <code>git init</code> might give a warning:
-<pre lang="text">warning: templates not found /usr/share/git-core/templates</pre>
-To avoid this warning I've added an alias to <code>~/.bashrc</code>:
-<pre lang="bash">alias git-init='git init --template=$HOME/usr/share/git-core/templates'</pre>
-This <code>git-init</code> command is an alternative to <code>git init</code> and will take the correct path for templates.
+This will create a `usr/` directory in currect directory. You best move this directory to your home root:
+{% highlight bash %}
+mv usr ~/usr
+{% endhighlight %}
 
-<h3>Possible problems</h3>
-One problem caused me a headache when using <code>git</code> to upload my site was het error:
-<pre lang="text">git: 'index-pack' is not a git-command.</pre>
-The reason for this problem was that <code>$HOME/usr/libexec/git-core</code> was not added to the <code>$PATH</code> variable.
+Now we are almost there, we only need to add the directory to `$PATH` variable. Doing this will make it possible to execute the command `git` from anywhere.
+Open your `~/.bashrc` file with your favorite editor (`vim` or `pico`) and add the following line:
+{% highlight bash %}
+export PATH=$PATH:$HOME/usr/bin:$HOME/usr/libexec/git-core
+{% endhighlight %}
+And that's it. To activate this change, run `source ~/.bashrc` or log out and in again.
 
-<h3>Further reading</h3>
-So now you have <code>git</code> up and running on your server and you can use it to upload your site. Read about it:
-<ul>
-   <li><a href="http://www.wolfslittlestore.be/2009/06/websites-updaten-met-git/">Websites updaten met git</a> - in Dutch</li>
-   <li><a href="http://toroid.org/ams/git-website-howto">Using Git to manage a web site</a> - original article in English</li>
-</ul>
+## Note
+You can use `git` just by typing the `git` command. But `git init` might give a warning:
+
+    warning: templates not found /usr/share/git-core/templates
+
+To avoid this warning I've added an alias to `~/.bashrc`:
+{% highlight bash %}
+alias git-init='git init --template=$HOME/usr/share/git-core/templates'
+{% endhighlight %}
+This `git-init` command is an alternative to `git init` and will take the correct path for templates.
+
+## Possible problems
+One problem caused me a headache when using `git` to upload my site was het error:
+
+    git: 'index-pack' is not a git-command.
+The reason for this problem was that `$HOME/usr/libexec/git-core` was not added to the `$PATH` variable.
+
+## Further reading
+So now you have `git` up and running on your server and you can use it to upload your site. Read about it:
+- [Websites updaten met git](http://www.wolfslittlestore.be/2009/06/websites-updaten-met-git/) - in Dutch
+- [Using Git to manage a web site](http://toroid.org/ams/git-website-howto) - original article in English
