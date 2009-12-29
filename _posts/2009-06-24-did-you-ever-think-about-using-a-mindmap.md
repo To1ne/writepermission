@@ -24,17 +24,17 @@ The basic features are for all mindmap webapps the same:
 ## Mindomo
 If I have to pick a winner, it would be [Mindomo](http://www.mindomo.com). Probably the best feature is the nice "home" screen where you can manage folders, public & private maps. The downside is the Office 2007-like toolbar with the tabs, but it actually quite intuitive.
 
-![Mindomo screenshot](http://blog.writepermission.com/wp-content/uploads/2009/06/mindomo.jpg)
+[![Mindomo screenshot](/content/2009/06/mindomo-thumb.jpg)](/content/2009/06/mindomo.jpg)
 
 ## Mindmeister
 Another great one is [Mindmeister](http://www.mindmeister.com/). I really like the way it looks, it is just great! It has a nice sidebar with all tools, but it the beginning it is not very easy to find the correct tool fast.
 
-![Mindmeister screenshot](http://blog.writepermission.com/wp-content/uploads/2009/06/mindmeister.jpg)
+[![Mindmeister screenshot](/content/2009/06/mindmeister-thumb.jpg)](/content/2009/06/mindmeister.jpg)
 
 ## Mind42
 Last but not least is [Mind42](http://mind42.com). The thing I like the most about this one is that it seems to work really fast. If you drag the screen, the map moves real smooth. But it would be great if there where some kind of tool bar for quick access to the most important functions. This would make it easier then using the dropdown menu's on the nodes.
 
-![Mind42 screenshot"](http://blog.writepermission.com/wp-content/uploads/2009/06/mind42.jpg)
+[![Mind42 screenshot"](/content/2009/06/mind42-thumb.jpg)](/content/2009/06/mind42.jpg)
 
 ## Tip
 All the above tools are free, but when using the free version they show advertisements. I've found a small trick to remove these advertisements. You can read about it in a [earlier blog post](http://writepermission.com/2009/04/more-useful-space-less-annoying-advertisements/).

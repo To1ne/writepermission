@@ -89,7 +89,7 @@ g++ appHelloWorld/printHelloWorld.c -IlibArchive1 -IlibArchive2 -LlibArchive1 -L
 
 This will sound really technical for a lot of people, but it took me too long solving it to not share it with you. I hope someone will benefit from it.
 
-You can download the source code of this example [here](http://blog.writepermission.com/wp-content/uploads/2009/08/Link2ArchivesInOneApp.zip).
+You can download the source code of this example [here](/content/2009/08/Link2ArchivesInOneApp.zip).
 
 ## Further Reading
 - [The C Book - Linkage](http://publications.gbdirect.co.uk/c_book/chapter4/linkage.html)

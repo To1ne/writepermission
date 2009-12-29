@@ -14,7 +14,7 @@ Recently Twitter has changed behavior of [@reply system](http://blog.twitter.com
 
 But maybe this #fixreplies problem can solve the language problem. If for every <del>used</del> language a user would exist, users can post a tweet in a irregular language starting with this username. If your friends follow this user too, which means they understand that language too, they will see this tweet, otherwise they don't.
 
-![A tweet in Dutch](http://blog.writepermission.com/wp-content/uploads/2009/07/lang_nl-tweet.png)
+![A tweet in Dutch](/content/2009/07/lang_nl-tweet.png)
 
 ## Language Users
 As test I've created the [@lang_nl](http://twitter.com/lang_nl) user, use this one if you want to tweet in Dutch (Nederlands). If you need another language, feel free to create one. But try to use the same name convention, meaning: @**lang_*\[language_code\]***, with ***\[language_code\]*** the code taken from [ISO 639-2 Language Code List](http://www.loc.gov/standards/iso639-2/php/code_list.php), and leave a comment which user you've created.
