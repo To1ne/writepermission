@@ -1,3 +1,12 @@
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-{{ post.content }}
-<em>Posted on {{ post.date | date_to_long_string }}.</em>
+{% if post %}
+{% assign mytitle = post.title %}
+{% assign mydate = post.date %}
+{% assign mycontent = post.content %}
+{% else %}
+{% assign mytitle = page.title %}
+{% assign mydate = page.date %}
+{% assign mycontent = content %}
+{% endif %}
+<h1><a href="{{ post.url }}">{{ mytitle }}</a></h1>
+<em class="postdate">posted on {{ mydate | date_to_long_string }}.</em>
+{{ mycontent }}

@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
-{{ content }}
-<em>Posted on {{ page.date | date_to_long_string }}.</em>
+{% include post.html %}
 
 <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/writepermission/embed.js"></script><noscript><a href="http://disqus.com/forums/writepermission/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
