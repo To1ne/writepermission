@@ -23,7 +23,7 @@ Next thing we need to know if your server is running 32bit or 64bit. This we can
 {% highlight bash %}
 uname -p
 {% endhighlight %}
-`x86_64` indicates the server has 64bit kernel running. `i386 `/`i486`/`i586`/`i686` means it is a 32bit kernel.
+`x86_64` indicates the server has 64bit kernel running. `i386`/`i486`/`i586`/`i686` means it is a 32bit kernel.
 
 ## Downloading git
 Next we need to download `git` from somewhere. Probably you can find it by searching it on a RPM repository. I found one on [rpm.pbone.net](http://rpm.pbone.net/). This site has a great search engine where you can find `git` version for your server distro.

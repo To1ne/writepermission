@@ -183,15 +183,18 @@ a img {
 }
 
 /* Code */
+pre, code {
+	font: .85em Monaco, monospace, Courier, "Courier New";
+}
 pre {
 	overflow: auto;
-	font: .9em Monaco, monospace, Courier, "Courier New";
 	line-height: 21px;
 	margin-bottom: 21px;
 	padding: 9px;
 }
 code {
-	font: .9em Monaco, monospace, Courier, "Courier New";
+	background: #EEEEEE none repeat scroll 0 0;
+	padding:0 3px;
 }
 pre code {
 	font-size: 1em;
