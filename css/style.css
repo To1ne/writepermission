@@ -364,7 +364,7 @@ a {
 #side h1 {
 	color: #B25756;
 	font-style: italic;
-	font-size: 1.1em;
+	font-size: 1.15em;
 }
 
 #side ul {
@@ -373,6 +373,10 @@ a {
 
 #side a {
 	color: #751816;
+}
+
+#side .box {
+	margin-bottom: 40px;
 }
 
 /**************************

@@ -4,7 +4,6 @@ title: Get rid of those ugly blue Firefox menu buttons on Vista
 wordpress_id: 118
 wordpress_url: http://blog.tonotdo.com/?p=118
 ---
-
 ## Problem
 I am a Vista user, I'm not very proud of it but can't afford a Mac at the moment, and use Firefox as my favorite browser. Works like it should, but I have one problem with it. The menu buttons are in a real ugly blue, see it for yourself:
 

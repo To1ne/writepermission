@@ -4,12 +4,10 @@ title: Did you ever think about using a mindmap?
 wordpress_id: 135
 wordpress_url: http://blog.tonotdo.com/?p=135
 ---
-
 ## Introduction
 At work we've been using [Visual Mind](http://www.visual-mind.com/). It is a [mindmapping](http://mind42.com/mindmaps) application, which allows users to capture and organize information in a visual manner.
 
 I really liked the idea of that. So I was looking for a free tool to do this and I preferred it to be a webapp, so it would be easy to access from anywhere. I've found these three great tools. Basically they all do the same, all with subtle differences which makes it hard for me to decide which one is best.
-
 
 ## Basic features
 The basic features are for all mindmap webapps the same:

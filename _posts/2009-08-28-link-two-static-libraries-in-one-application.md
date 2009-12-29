@@ -4,7 +4,6 @@ title: Link two static libraries in one application
 wordpress_id: 176
 wordpress_url: http://blog.tonotdo.com/?p=176
 ---
-
 ## Introduction
 This is a technical post about compiling a C/C++ application using [gcc](http://en.wikipedia.org/wiki/GNU_Compiler_Collection). This post requires understanding of [C programming](http://en.wikipedia.org/wiki/C_%28programming_language%29) and building it.
 

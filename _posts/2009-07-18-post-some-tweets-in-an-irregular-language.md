@@ -4,7 +4,6 @@ title: Post some tweets in an irregular language
 wordpress_id: 151
 wordpress_url: http://blog.tonotdo.com/?p=151
 ---
-
 ## Problem
 Most people use one main language (e.g. English) to post there tweets. But sometimes you really want to post a tweet in a different language. If you just post the tweet in that "irregular" language, most of your followers would not understand the tweet. So you don't want to bother those people with those tweets.
 Some people use a second Twitter account to post in another language, but this isn't very convenient because you'll have to which between accounts.

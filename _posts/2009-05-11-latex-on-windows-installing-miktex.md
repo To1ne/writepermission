@@ -4,7 +4,6 @@ title: "LaTeX on Windows: Installing MikTeX"
 wordpress_id: 96
 wordpress_url: http://blog.tonotdo.com/?p=96
 ---
-
 ##Introduction
 In my graduation year I learned to use [LaTeX](http://en.wikipedia.org/wiki/LaTeX) and I fell in love with it. The output is just so clean and consistent. 
 Meanwhile it has been a while since I've used LaTeX, but I wanted to use it again. I had to install everything again because my computer got reinstalled. So I'll explain you how I did it.
