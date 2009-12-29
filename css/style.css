@@ -259,6 +259,15 @@ h1 a:hover {
 	text-decoration: none;
 }
 
+a:hover, a:active {
+	color:#D45755;
+	text-decoration:underline;
+}
+a {
+	color:#2D8BCF;
+	text-decoration:none;
+}
+
 /**************************
 * Header
 *************************/
@@ -347,6 +356,10 @@ h2, h3, h4, h5, h6 {
 /**************************
 * Pygments highlighting
 *************************/
+pre {
+	background-color: #f9f9f9;
+	border: 1px solid #999999;
+}
 .hll { background-color: #ffffcc }
 .c { color: #408080; font-style: italic } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
