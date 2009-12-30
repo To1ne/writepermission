@@ -127,7 +127,10 @@ li address, dd address {
 }
 /* Blockquotes */
 blockquote {
-	margin: 0 2.5em;
+	background: #f1f1Df;
+	border-left: 3px solid #999999;
+	margin: 0 1.5em 1.5em 1.5em;
+	padding: 0.2em 1em;
 	font-style: normal;
 }
 blockquote em, blockquote cite {
@@ -138,7 +141,9 @@ blockquote, q {
 }
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
-	content: none;
+}
+blockquote p {
+	margin-bottom: 5px;
 }
 /* Links */
 a img {
@@ -287,7 +292,7 @@ h2, h3, h4, h5, h6 {
 *************************/
 #content {
 	float: left;
-	margin-top: 200px;
+	margin: 200px 0 0 1px;
 	width: 580px;
 }
 #content h1 {
