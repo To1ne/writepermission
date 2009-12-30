@@ -2,7 +2,12 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	{% assign maintitle = 'rw-r--r-- | writepermission.com' %}
+	{% if page.title %}
+	<title>{{ page.title }} || {{ maintitle }}</title>
+	{% else %}
+	<title>{{ maintitle }}</title>
+	{% endif %}
 	<link rel="stylesheet" href="/css/style.css" type="text/css" />
 	<link href="http://feeds.feedburner.com/writepermission" rel="alternate" title="rw-r--r-- | writepermission.com" type="application/atom+xml" />
 	<meta name="robots" content="index,follow" />
