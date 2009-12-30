@@ -3,7 +3,7 @@ This is the input data for [Jekyll](http://github.com/mojombo/jekyll) to generat
 
 # License
 
-The following directories and their contents are Copyright Toon Claes. You may not reuse anything therein without permission:
+The following directories and their contents are Copyright [Toon Claes](http://tonotdo.com). You may not reuse anything therein without permission:
 
 * _posts/
 * content/

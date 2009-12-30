@@ -355,9 +355,15 @@ h2, h3, h4, h5, h6 {
 #side a {
 	color: #751816;
 }
+#side a:hover {
+	text-decoration: underline;
+}
 #side .box {
 	margin-bottom: 20px;
 	border: 3px dashed #f1f1Df;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 /**************************
