@@ -164,6 +164,7 @@ pre, code {
 	font: .85em Monaco, monospace, Courier, "Courier New";
 }
 pre code {
+	background: inherit;
 	font-size: 1em;
 }
 pre {
