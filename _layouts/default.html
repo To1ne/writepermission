@@ -29,18 +29,18 @@
 			<ul id="nav">
 				{% if paginator.previous_page %}
 					{% if paginator.previous_page > 1 %}	
-				<li class="next"><a href="/page{{ paginator.previous_page }}" title="Next page">&laquo; Next</a></li>
+				<li class="next"><a href="/page{{ paginator.previous_page }}" title="Go to next posts">&laquo; Next</a></li>
 					{% else %}	
-				<li class="next"><a href="/" title="Next page">&laquo; Next</a></li>
+				<li class="next"><a href="/" title="Go to next posts">&laquo; Next</a></li>
 					{% endif %}
 				{% else %}
-				<li class="next"><a class="hide" title="Go to next page">&laquo; Next</a></li>
+				<li class="next"><a class="hide" title="Go to next posts">&laquo; Next</a></li>
 				{% endif %}
 				<li class="current">Page <strong>{{ paginator.page }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
 				{% if paginator.next_page %}
-				<li class="prev"><a href="/page{{ paginator.next_page }}" title="Go to previous page">Previous &raquo;</a></li>
+				<li class="prev"><a href="/page{{ paginator.next_page }}" title="Go to previous posts">Previous &raquo;</a></li>
 				{% else %}
-				<li class="prev"><a class="hide" title="Go to previous page">Previous &raquo;</a></li>
+				<li class="prev"><a class="hide" title="Go to previous posts">Previous &raquo;</a></li>
 				{% endif %}
 			</ul>
 			{% endif %}
