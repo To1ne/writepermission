@@ -166,7 +166,7 @@ a, a:link, a:visited {
 }
 /* Code */
 pre, code {
-	font: .85em Monaco, monospace, Courier, "Courier New";
+	font: .85em Courier, "Courier New", monospace;
 }
 pre code {
 	background: inherit;
@@ -263,7 +263,7 @@ h2, h3, h4, h5, h6 {
 }
 #dasher h1 {
 	color: #B25756;
-	font: normal normal normal 70px/45px monospace;
+	font: normal normal normal 70px/45px Courier, "Courier New", monospace;
 	z-index: 5;
 }
 #dasher .title {
@@ -319,12 +319,12 @@ h2, h3, h4, h5, h6 {
 	width: 100px;
 }
 #nav .prev a {
-	right: 0;
-	text-align: right;
-}
-#nav .next a {
 	left: 0;
 	text-align: left;
+}
+#nav .next a {
+	right: 0;
+	text-align: right;
 }
 #nav .hide {
 	display: none;
