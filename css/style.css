@@ -319,12 +319,12 @@ h2, h3, h4, h5, h6 {
 	width: 100px;
 }
 #nav .prev a {
-	right: 0;
-	text-align: right;
-}
-#nav .next a {
 	left: 0;
 	text-align: left;
+}
+#nav .next a {
+	right: 0;
+	text-align: right;
 }
 #nav .hide {
 	display: none;
