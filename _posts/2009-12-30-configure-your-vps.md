@@ -30,7 +30,7 @@ rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
 
 - Install rpmforge-release package:
 	{% highlight bash %}
-rpm --import http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
+rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
 {% endhighlight %}
 
 ## Basic settings
