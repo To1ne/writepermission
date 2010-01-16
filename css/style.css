@@ -1,3 +1,23 @@
+/***************************************************
+* Main style sheet
+*
+* Project: 	rw- blog
+* URL: 		writepermission.com
+* Author:	Toon Claes
+*
+* Colors:
+* 	- main: 		#E8E8CA
+*	- dark:			#7F7F6E
+*   - bright:		#F2F2E2
+*	- dark-red: 	#751816
+*   - bright-red:	#B25756
+*   - subtle-red:	#DDD5B9
+*	- dimmed:		#666666
+*   - blueish:		#2D8BCF
+* 	- redish:		#D45755
+*
+**************************************************/
+
 /**************************
 * General styles
 *************************/
@@ -16,7 +36,6 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
 body {
 	line-height: 24px;
 	font-family: Cambria, Georgia, Times, "Times New Roman", serif;
-	color: #333;
 	background: #E8E8CA;
 }
 /* Headers */
@@ -99,7 +118,7 @@ abbr {
 }
 acronym {
 	text-transform: uppercase;
-	border-bottom: 1px dashed #666;
+	border-bottom: 1px dashed #666666;
 	cursor: help;
 }
 big {
@@ -127,8 +146,8 @@ li address, dd address {
 }
 /* Blockquotes */
 blockquote {
-	background: #f1f1Df;
-	border-left: 3px solid #999999;
+	background: #F2F2E2;
+	border-left: 3px solid #BEBEA5;
 	margin: 0 1.5em 1.5em 1.5em;
 	padding: 0.2em 1em;
 	font-style: normal;
@@ -156,13 +175,13 @@ h1 a:hover {
 	color: #B25756;
 	text-decoration: none;
 }
-a:hover, a:active {
-	color:#D45755;
-	text-decoration: underline;
-}
 a, a:link, a:visited {
-	color:#2D8BCF;
+	color: #2D8BCF;
 	text-decoration: none;
+}
+a:hover, a:active {
+	color: #D45755;
+	text-decoration: underline;
 }
 /* Code */
 pre, code {
@@ -173,22 +192,22 @@ pre code {
 	font-size: 1em;
 }
 pre {
-	background-color: #f9f9f9;
-	border: 1px solid #999999;
+	background-color: #F2F2E2;
+	/*border: 1px solid #BEBEA5;*/
 	line-height: 21px;
 	margin-bottom: 21px;
 	overflow: auto;
 	padding: 9px;
 }
 code {
-	background: #EEEEEE none repeat scroll 0 0;
+	background: #F2F2E2 none repeat scroll 0 0;
 	padding:0 3px;
 }
 /* Delete and insert */
 ins, dfn {
 	font-style: italic;
 	text-decoration: none;
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid #666666;
 }
 del {
 	text-decoration: line-through;
@@ -224,6 +243,11 @@ th, td {
 /* Horizontal rule */
 hr {
 	margin-bottom: 21px;
+	border-top: 3px dashed #BEBEA5;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	width: 30%;
 }
 /* Major container */
 #container {
@@ -292,7 +316,8 @@ h2, h3, h4, h5, h6 {
 *************************/
 #content {
 	float: left;
-	margin: 200px 0 0 1px;
+	padding-top: 200px;
+	overflow: visible;
 	width: 580px;
 }
 #content h1 {
@@ -360,7 +385,7 @@ h2, h3, h4, h5, h6 {
 }
 #side .box {
 	margin-bottom: 20px;
-	border: 3px dashed #f1f1Df;
+	border: 3px dashed #DDD5B9;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
