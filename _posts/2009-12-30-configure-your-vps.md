@@ -33,6 +33,23 @@ rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
 rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
 {% endhighlight %}
 
+- Install and activate `zsh`:
+	{% highlight bash %}
+yum install zsh
+ln -sf /bin/zsh /bin/sh
+{% endhighlight %}
+
+- Install `git`:
+	{% highlight bash %}
+yum install git
+{% endhighlight %}
+
+- Install `oh-my-zsh`:
+	{% highlight bash %}
+wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+{% endhighlight %}
+
+
 ## Basic settings
 Next we apply some basic settings:
 
@@ -127,7 +144,7 @@ chkconfig --levels 235 pure-ftpd on
 First we need to install and configure postfix:
 {% highlight bash %}
 yum remove sendmail
-yum install postfix
+yum install postfix dovecot
 {% endhighlight %}
 
 This removes sendmail, because we use postfix instead.
@@ -139,7 +156,7 @@ myorigin = $mydomain
 inet_interfaces = all
 mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 {% endhighlight %}
-TODO maybe use the postfix -e command
+TODO add the postconf -e command
 
 All the lines are already in the file you just need to uncomment them and edit `yourdomainname`.
 
@@ -207,6 +224,8 @@ group = postfix
 
 Now just start them:
 {% highlight bash %}
+chkconfig --level 235 saslauthd on
+/etc/init.d/saslauthd start
 chkconfig --levels 235 postfix on
 /etc/init.d/postfix start
 chkconfig --levels 235 dovecot on
@@ -244,7 +263,7 @@ chmod 700 /usr/share/roundcube/temp /usr/share/roundcube/logs
 
 Configure the database:
 {% highlight bash %}
-mysql --username=root --password=yourrootsqlpassword
+mysql --user=root --password=yourrootsqlpassword
 CREATE DATABASE roundcubemail;
 GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcubeuser@localhost IDENTIFIED BY 'yourroundcubepass';
 FLUSH PRIVILEGES;
@@ -263,7 +282,7 @@ chmod 000 /usr/share/roundcube/.installer
 {% endhighlight %}
 
 ## Sources
-- [The Perfect Server - CentOS 5.3 x86_64 \[ISPConfig 3\]](http://www.howtoforge.com/perfect-server-centos-5.3-x86_64-ispconfig-3")</a>
+- [The Perfect Server - CentOS 5.3 x86_64 \[ISPConfig 3\]](http://www.howtoforge.com/perfect-server-centos-5.3-x86_64-ispconfig-3)</a>
 - [The Perfect Setup - CentOS 4.3 (64-bit)](http://www.howtoforge.com/perfect_setup_centos_4.3)
 - [Quick Linux Server Installation](http://www.mysql-apache-php.com/)
 - [Installing PHP 5.2.x or 5.3.x on RedHat ES5, CentOS 5, etc](http://bluhaloit.wordpress.com/2008/03/13/installing-php-52x-on-redhat-es5-centos-5-etc/)
