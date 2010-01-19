@@ -22,6 +22,11 @@ yum install telnet
 yum install links
 {% endhighlight %}
 
+atk.i386 bitstream-vera-fonts.noarch  cairo.i386 cups-libs.i386   gnutls.i386     gtk2.i386  hicolor-icon-theme.noarch libXcursor.i386         libXfixes.i386   libXft.i386       libXi.i386       libXinerama.i386   libXrandr.i386  libXrender.i386    libglade2.i386           pango.i386   pycairo.i386    pygobject2.i386       pygtk2.i386         pygtk2-libglade.i386
+python-numeric.i386 
+
+
+
 - Install GPG keys:
 	{% highlight bash %}
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
@@ -265,7 +270,7 @@ Configure the database:
 {% highlight bash %}
 mysql --user=root --password=yourrootsqlpassword
 CREATE DATABASE roundcubemail;
-GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcubeuser@localhost IDENTIFIED BY 'yourroundcubepass';
+GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcube@localhost IDENTIFIED BY 'yourroundcubepass';
 FLUSH PRIVILEGES;
 {% endhighlight %}
 
@@ -281,7 +286,40 @@ mv /usr/share/roundcube/installer /usr/share/roundcube/.installer
 chmod 000 /usr/share/roundcube/.installer
 {% endhighlight %}
 
+MORE TODO
+install extensions:
+{% highlight bash %}
+yum install php-pecl-fileinfo php-dom php-gd
+{% endhighlight %}
+
+add to `/etc/php.ini`
+{% highlight text %}
+extension=fileinfo.so
+extension=domxml.so
+extension=gd.so
+extension=mcrypt.so
+
+
+date.timezone = “Europe/Brussels”
+
+
+rpm --import http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka    --> php 5.2+
+
+
+vim /etc/yum.repos.d/utterramblings.repo
+
+add >
+[utterramblings]
+name=Jason's Utter Ramblings Repo
+baseurl=http://www.jasonlitka.com/media/EL$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
+
+{% endhighlight %}
+
 ## Sources
+http://www.jasonlitka.com/yum-repository/
 - [The Perfect Server - CentOS 5.3 x86_64 \[ISPConfig 3\]](http://www.howtoforge.com/perfect-server-centos-5.3-x86_64-ispconfig-3)</a>
 - [The Perfect Setup - CentOS 4.3 (64-bit)](http://www.howtoforge.com/perfect_setup_centos_4.3)
 - [Quick Linux Server Installation](http://www.mysql-apache-php.com/)
