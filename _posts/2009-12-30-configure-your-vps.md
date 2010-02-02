@@ -4,15 +4,27 @@ title: Configure your VPS
 wordpress_id: 286
 wordpress_url: http://blog.writepermission.com/?p=286
 ---
-## Basic tools
-Some basic tools will make it easy to set up your VPS, so we install them first:
+## Prerequisites
+Let's start with getting some prerequisites ready.
+- Install GPG keys:
+	{%highlight bash %}
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
+rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
+{% endhighlight %}
 
-- Install VIM text editor using the command:
+- Install `rpmforge-release` package:
+	{% highlight bash %}
+rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
+{% endhighlight %}
+
+Later on we'll use some tools to configure and test the  VPS, so we install them too:
+
+- Install a command line text editor, choose `vim` or `emacs`:
 	{% highlight bash %}
 yum install vim-minimal vim-common vim-enhanced
 {% endhighlight %}
 
-- Install telnet (used to test later on) TODO:
+- Install telnet (used to test later on):
 	{% highlight bash %}
 yum install telnet
 {% endhighlight %}
@@ -22,22 +34,9 @@ yum install telnet
 yum install links
 {% endhighlight %}
 
-atk.i386 bitstream-vera-fonts.noarch  cairo.i386 cups-libs.i386   gnutls.i386     gtk2.i386  hicolor-icon-theme.noarch libXcursor.i386         libXfixes.i386   libXft.i386       libXi.i386       libXinerama.i386   libXrandr.i386  libXrender.i386    libglade2.i386           pango.i386   pycairo.i386    pygobject2.i386       pygtk2.i386         pygtk2-libglade.i386
-python-numeric.i386 
 
-
-
-- Install GPG keys:
-	{% highlight bash %}
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
-rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
-{% endhighlight %}
-
-- Install rpmforge-release package:
-	{% highlight bash %}
-rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
-{% endhighlight %}
-
+## Optional tools
+I've installed the following tools too. These are not required, but might be useful some day.
 - Install and activate `zsh`:
 	{% highlight bash %}
 yum install zsh
