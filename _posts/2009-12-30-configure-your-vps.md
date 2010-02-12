@@ -4,9 +4,10 @@ title: Configure your VPS
 wordpress_id: 286
 wordpress_url: http://blog.writepermission.com/?p=286
 ---
-## Prerequisites
-Let's start with getting some prerequisites ready.
-- Install GPG keys:
+## Preparation
+Let's start with some basic preparation.
+
+- Install additional GPG keys:
 	{%highlight bash %}
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
 rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
@@ -17,13 +18,40 @@ rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
 rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
 {% endhighlight %}
 
-Later on we'll use some tools to configure and test the  VPS, so we install them too:
+- Install updates:
+	{% highlight bash %}
+yum update
+{% endhighlight %}
 
-- Install a command line text editor, choose `vim` or `emacs`:
+- Install ssh authorized key for faster login via `ssh`:
+	{% highlight bash %}
+mkdir -p ~/.ssh
+ssh-copy-id -i .ssh/id_rsa.pub root@yourdomainname.tld
+{% endhighlight %}
+
+
+## Test tools
+Later on we'll use some tools to modify configurations and run tests, so we install those too:
+
+- Install a command line text editor, `vim` can be installed using `yum`:
 	{% highlight bash %}
 yum install vim-minimal vim-common vim-enhanced
 {% endhighlight %}
 
+- ... or you can build `emacs` yourself:
+	{% highlight bash %}
+ mkdir -p /usr/src/emacs
+cd /usr/src/emacs
+wget http://ftp.gnu.org/gnu/emacs/emacs-22.3.tar.gz
+tar -xzf emacs-22.3.tar.gz
+cd emacs-22.3
+./configure
+make
+make test
+make install
+{% endhighlight %}
+
+=
 - Install telnet (used to test later on):
 	{% highlight bash %}
 yum install telnet
@@ -67,11 +95,6 @@ Next we apply some basic settings:
 NETWORKING="yes"
 HOSTNAME="yourdomainname.tld"
 GATEWAY="216.66.76.1"
-{% endhighlight %}
-
-- Install updates:
-	{% highlight bash %}
-yum update
 {% endhighlight %}
 
 - Get additional yum repositories:
