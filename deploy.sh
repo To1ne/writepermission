@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Cleanup site
+cd _site
+git rm -r -- .
+cd -
+
 # Generate site
 jekyll
 
