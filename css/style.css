@@ -6,15 +6,15 @@
 * Author:	Toon Claes
 *
 * Colors:
-* 	- main: 		#E8E8CA
-*	- dark:			#7F7F6E
-*   - bright:		#F2F2E2
-*	- dark-red: 	#751816
-*   - bright-red:	#B25756
-*   - subtle-red:	#DDD5B9
-*	- dimmed:		#666666
-*   - blueish:		#2D8BCF
-* 	- redish:		#D45755
+*    - main:          #E8E8CA
+*    - dark:          #7F7F6E
+*    - bright:        #F2F2E2
+*    - dark-red:      #751816
+*    - bright-red:    #B25756
+*    - subtle-red:    #DDD5B9
+*    - dimmed:        #666666
+*    - blueish:	      #2D8BCF
+*    - redish:        #D45755
 *
 **************************************************/
 
@@ -185,7 +185,7 @@ a:hover, a:active {
 }
 /* Code */
 pre, code {
-	font: .85em Courier, "Courier New", monospace;
+	font: 1em Courier, "Courier New", monospace;
 }
 pre code {
 	background: inherit;
@@ -243,7 +243,7 @@ th, td {
 /* Horizontal rule */
 hr {
 	margin-bottom: 21px;
-	border-top: 3px dashed #BEBEA5;
+	border-top: 3px dashed #DDD5B9;
 	border-right: none;
 	border-bottom: none;
 	border-left: none;
