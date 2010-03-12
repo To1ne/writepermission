@@ -2,8 +2,13 @@
 layout: post
 title: GTD using org-mode on S60 phone
 ---
-## Aim
-The aim of this post is setting up a system for <acronym title="Getting Things Done">GTD</acronym> on a S60 mobile phone. For this setup we'll use `emacs org-mode`.
+## Introduction
+I really felt a need for a decend way to organize my TODO lists. The things I need are:
+- Accessible from everywhere, even on my Nokia E71 Symbian phone
+- Stored centralized, to avoid out-of-sync copies
+- A simple file format, so it easily can be opened with a simple text editor
+
+I'm a emacs user and in my search for this setup I ran into `org-mode`, which seemed the perfect solution to me.
 
 ## Prerequisites
 I've used a <acronym title="Virtual Private Server">VPS</acronym> as server for setting up this environment. It might be possible to do this on a shared host too, but that is not covered in this post.
