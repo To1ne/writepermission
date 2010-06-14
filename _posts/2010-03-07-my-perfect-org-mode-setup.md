@@ -97,6 +97,13 @@ You can start the DropBox daemon with the command
 `~/.dropbox-dist/dropboxd`. You should ensure the daemon is started on
 every boot, therefore 
 
+yum  install nautilus
+
+log in to the webpage
+This client is not linked to any account...
+Please visit https://www.dropbox.com/cli_link?host_id=ff6921fc2f3ca85517c222b07b7aa809 to link this machine.
+
+
 ## Version control
 In my setup I use `git` to keep history of my `.org` files. This allows you to work locally on the `.org` files, and `push` them to the server when you're done.
 My server is a CentOs machine, and I've installed `git` with the command:
@@ -105,3 +112,12 @@ yum install git
 {%endhighlight%}
 But if you want to install `git` on a shared host, you can follow the instructions from [my previous post](/2009/09/install-git-on-a-shared-webhost/).
 
+
+## MagicKey
+volume up to control: 162 to 22
+volume down to esc: 163 to 4
+mute to tab: 242 to 2
+
+# TODO
+fix ssh public key for root (nothing to do with this)
+make the dropbox directory accesible for org user
