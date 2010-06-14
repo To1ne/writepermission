@@ -33,11 +33,36 @@ make
 make install
 {% endhighlight %}
 
-You might get the following error:
+### Drawbacks
+I encountered the following problems:
+{% highlight text %}
+configure: error: no acceptable C compiler found in $PATH
+{%endhighlight%}
+
+This means the development tools are not installed on your system. You
+can install them with the command:
+{%highlight bash %}
+yum groupinstall 'Development Tools'
+{%endhighlight%}
+
+The next error I got when I was running `./configure` was:
+{% highlight text %}
+configure: error: You seem to be running X, but no X development libraries
+were found.  You should install the relevant development files for X
+and for the toolkit you want, such as Gtk+, Lesstif or Motif.  Also make
+sure you have development files for image handling, i.e.
+tiff, gif, jpeg, png and xpm.
+If you are sure you want Emacs compiled without X window support, pass
+  --without-x
+to configure.
+{%endhighlight%}
+The solution for this is quite self-explaniotary, just pass
+`--without-x` to the configure-script.
+
+Another thing I ran into was:
 {% highlight text %}
 makeinfo is missing - cannot build manuals
 {%endhighlight%}
-
 To solve this problem append `--without-makeinfo` to the `./configure` command above and run the following commands again ([ref](http://osdir.com/ml/wp-forums/2009-08/msg00001.html)).
 
 
@@ -58,6 +83,19 @@ org:x:500:500::/home/org:/usr/local/bin/emacs
 {%endhighlight%}
 But you might want to wait with this, because you need to configure other settings first.
 
+## Dropbox
+We need to install DropBox without gnome, do this with the commands:
+{%highlight bash %}
+mkdir -p /tmp/dropbox
+cd /tmp/dropbox
+wget http://www.getdropbox.com/download?plat=lnx.x86 
+tar -xzf dropbox-lnx.x86-*.tar.gz
+mv .dropbox-dist/ $HOME
+{%endhighlight%}
+
+You can start the DropBox daemon with the command
+`~/.dropbox-dist/dropboxd`. You should ensure the daemon is started on
+every boot, therefore 
 
 ## Version control
 In my setup I use `git` to keep history of my `.org` files. This allows you to work locally on the `.org` files, and `push` them to the server when you're done.
