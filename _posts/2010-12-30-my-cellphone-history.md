@@ -28,7 +28,7 @@ I spend almost all my savings on this phone (I remember it costed about
 - A music player with 64 MB storage
 
 If I think of it, it is ugly as hell and it's also huge to carry in
-you pocket. But I thought it was great. I loved typing on a complete keyboard.
+your pocket. But I thought it was great. I loved typing on the complete keyboard.
 
 I still have this phone and still works.
 
@@ -84,9 +84,10 @@ need a phone that doesn't require gentle handling.
 ![Nokia E71](/content/2010/12/nokia-e71.jpg)
 
 Again I saved some money and bought me a decent phone. I looks like a
-Blackberry, but still is a Nokia (my favorite brand so far). I does
+Blackberry, but still is a Nokia (my favorite brand so far). It does
 what it should, without any extra. So I cannot conclude this phone is
 great.
+
 I think what I hate most about it is the bad camera. This is a common
 weakness of Nokia phones (especially the business types).
 
