@@ -294,12 +294,13 @@ h2, h3, h4, h5, h6 {
   z-index: 10;
 }
 #dasher a {
-  /*background: #E8E8CA;*/
+  background: #E8E8CA;  /*TODO fix Safari and Chrome*/
 }
 #dasher .pre {
   margin: 0 0 -45px -9999px;
   overflow: hidden;
-  position: fixed;
+  /*position: fixed; TODO fix Safari and Chrome*/
+  right: 0;
   text-align: right;
   width: 9999px;
 }
@@ -308,10 +309,9 @@ h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: -45px;
   z-index: 5;
-
 }
 #dasher .post {
-  position: fixed;
+  /*position: fixed; TODO fix Safari and Chrome*/
   z-index: 4;
 }
 #dasher h2 {
