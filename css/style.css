@@ -288,13 +288,13 @@ h2, h3, h4, h5, h6 {
 #dasher h1 {
   color: #B25756;
   font: normal normal normal 70px/45px monospace;
-  z-index: 5;
 }
 #dasher .title {
   margin-bottom: -45px;
+  z-index: 10;
 }
 #dasher a {
-  background: #E8E8CA;
+  /*background: #E8E8CA;*/
 }
 #dasher .pre {
   margin: 0 0 -45px -9999px;
@@ -303,6 +303,13 @@ h2, h3, h4, h5, h6 {
   text-align: right;
   width: 9999px;
 }
+#dasher .undash {
+  color: #E8E8CA;
+  font-weight: bold;
+  margin-bottom: -45px;
+  z-index: 5;
+
+}
 #dasher .post {
   position: fixed;
   z-index: 4;
@@ -310,6 +317,7 @@ h2, h3, h4, h5, h6 {
 #dasher h2 {
   color: #666666;
   font: normal normal normal 16px/20px Georgia, Times, "Times New Roman", serif;
+  margin-top: 2.8em;
   z-index: 6;
 }
 
