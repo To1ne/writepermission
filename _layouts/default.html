@@ -15,7 +15,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<div id="dasher">{% capture dashing %}{{ '-' | times:150 }}{% endcapture %}
+			<div id="dasher">{% capture dashing %}{% for i in (1..150) %}-{% endfor %}{% endcapture %}
 				<h1 class="pre" >{{ dashing }}</h1>
 				<h1 class="title"><a href="/" title="rw-r--r--">rw-r--r--</a></h1>
 				<h1 class="post">{{ dashing }}</h1>
