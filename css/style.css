@@ -287,17 +287,19 @@ h2, h3, h4, h5, h6 {
 }
 #dasher h1 {
   color: #B25756;
-  font: normal normal normal 70px/45px monospace;
+  font: 5.5em monospace;
+  height: 50px;
+  margin-bottom: -50px !important;
 }
 #dasher .title {
-  margin-bottom: -45px;
   z-index: 10;
 }
 #dasher a {
-  background: #E8E8CA;  /*TODO fix Safari and Chrome*/
+  /*background: #E8E8CA;  /*TODO fix Safari and Chrome*/
 }
 #dasher .pre {
-  margin: 0 0 -45px -9999px;
+  margin-left: -9999px;
+  /*margin: 0 0 -1.01em -9999px;*/
   overflow: hidden;
   /*position: fixed; TODO fix Safari and Chrome*/
   right: 0;
@@ -307,7 +309,6 @@ h2, h3, h4, h5, h6 {
 #dasher .undash {
   color: #E8E8CA;
   font-weight: bold;
-  margin-bottom: -45px;
   z-index: 5;
 }
 #dasher .post {
