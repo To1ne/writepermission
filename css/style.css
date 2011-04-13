@@ -294,9 +294,12 @@ h2, h3, h4, h5, h6 {
 #dasher .title {
   z-index: 10;
 }
+/* replaced by .undash
+ * although there is still a bit of distortion on the edges
 #dasher a {
-  /*background: #E8E8CA;  /*TODO fix Safari and Chrome*/
+  background: #E8E8CA;
 }
+*/
 #dasher .pre {
   margin-left: -9999px;
   /*margin: 0 0 -1.01em -9999px;*/
