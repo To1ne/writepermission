@@ -288,8 +288,8 @@ h2, h3, h4, h5, h6 {
 #dasher h1 {
   color: #B25756;
   font: 5.5em monospace;
-  height: 50px;
-  margin-bottom: -50px !important;
+  height: 6em;
+  margin-bottom: -6em;
 }
 #dasher .title {
   z-index: 10;
