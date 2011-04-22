@@ -29,24 +29,24 @@
         {% if paginator.total_pages > 1 %}
         <ul id="nav">
           {% capture prevattr %}
-          {% if paginator.previous_page %}
-          {% if paginator.previous_page > 1 %}
-          href="/page{{ paginator.previous_page }}"
-          {% else %}
-          href="/"
-          {% endif %}
-          {% else %}
-          class="hide"
-          {% endif %}
+            {% if paginator.previous_page %}
+              {% if paginator.previous_page > 1 %}
+                href="/page{{ paginator.previous_page }}"
+              {% else %}
+                href="/"
+              {% endif %}
+            {% else %}
+              class="hide"
+            {% endif %}
           {% endcapture %}
           <li class="prev"><a {{ prevattr | strip_newlines | remove:'     ' }} title="Go to previous page">&laquo; Previous</a></li>
           <li class="current">Page <strong>{{ paginator.page }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
           {% capture nextattr %}
-          {% if paginator.next_page %}
-          href="/page{{ paginator.next_page }}"
-          {% else %}
-          class="hide"
-          {% endif %}
+            {% if paginator.next_page %}
+              href="/page{{ paginator.next_page }}"
+            {% else %}
+              class="hide"
+            {% endif %}
           {% endcapture %}
           <li class="next"><a {{ nextattr | strip_newlines | remove:'     ' }} title="Go to next page">Next &raquo;</a></li>
         </ul>
