@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>{% assign maintitle = 'rw-r--r-- | writepermission.com' %}
-        {% if page.title %}<title>{{ page.title }} ~ {{ maintitle }}</title>
-        {% else %}<title>{{ maintitle }}</title>{% endif %}
-        <link rel="stylesheet" href="/css/style.css" type="text/css" />
-        <link href="http://feeds.feedburner.com/writepermission" rel="alternate" title="rw-r--r-- | writepermission.com" type="application/atom+xml" />
-        <meta name="robots" content="index,follow" />
-        <meta name="author" content="Toon Claes" />
-        <meta name="copyright" content="Copyright (c) 2009" />
-        <meta name="description" content="permitted to write..." />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-</head>
-<body>
-        <div id="container">
-                <div id="header">
-                        <div id="dasher">{% capture dashing %}{% for i in (1..150) %}-{% endfor %}{% endcapture %}
-                                <h1 class="pre" >{{ dashing }}</h1>
-                                <h1 class="undash">---------</h1>
-                                <h1 class="title"><a href="/" title="rw-r--r--">rw-r--r--</a></h1>
-                                <h1 class="post">{{ dashing }}</h1>
-                                <h2>permitted to write...</h2>
-                        </div><!-- #dasher -->
-                </div><!-- #header -->
-                <div id="content">
-                        {{ content }}
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>{% assign maintitle = 'rw-r--r-- | writepermission.com' %}
+    {% if page.title %}<title>{{ page.title }} ~ {{ maintitle }}</title>
+    {% else %}<title>{{ maintitle }}</title>{% endif %}
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link href="http://feeds.feedburner.com/writepermission" rel="alternate" title="rw-r--r-- | writepermission.com" type="application/atom+xml" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Toon Claes" />
+    <meta name="copyright" content="Copyright (c) 2009" />
+    <meta name="description" content="permitted to write..." />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="dasher">{% capture dashing %}{% for i in (1..150) %}-{% endfor %}{% endcapture %}
+          <h1 class="pre" >{{ dashing }}</h1>
+          <h1 class="undash">---------</h1>
+          <h1 class="title"><a href="/" title="rw-r--r--">rw-r--r--</a></h1>
+          <h1 class="post">{{ dashing }}</h1>
+          <h2>permitted to write...</h2>
+        </div><!-- #dasher -->
+      </div><!-- #header -->
+      <div id="content">
+        {{ content }}
 
-                        {% if paginator.total_pages > 1 %}
-                        <ul id="nav">
-                                {% capture prevattr %}
-                                        {% if paginator.previous_page %}
-                                                {% if paginator.previous_page > 1 %}
-                                                        href="/page{{ paginator.previous_page }}"
-                                                {% else %}
-                                                        href="/"
-                                                {% endif %}
-                                        {% else %}
-                                                class="hide"
-                                        {% endif %}
-                                {% endcapture %}
-                                <li class="prev"><a {{ prevattr | strip_newlines | remove:'     ' }} title="Go to previous page">&laquo; Previous</a></li>
-                                <li class="current">Page <strong>{{ paginator.page }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
-                                {% capture nextattr %}
-                                        {% if paginator.next_page %}
-                                                href="/page{{ paginator.next_page }}"
-                                        {% else %}
-                                                class="hide"
-                                        {% endif %}
-                                {% endcapture %}
-                                <li class="next"><a {{ nextattr | strip_newlines | remove:'     ' }} title="Go to next page">Next &raquo;</a></li>
-                        </ul>
-                        {% endif %}
-                </div><!-- #content -->
-                <div id="side">
-                        <div class="box">
-                                <h1>Search</h1>
-                                <form action="http://www.google.com/cse" id="cse-search-box">
-                                        <div>
-                                                <input type="hidden" name="cx" value="012756515914671374425:dcryjfcxqvc" />
-                                                <input type="hidden" name="cof" value="FORID:10" />
-                                                <input type="hidden" name="ie" value="UTF-8" />
-                                                <input type="text" name="q" value="search phrase" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" id="search-text" />
-                                                <!--<input type="submit" name="sa" value="Search" />-->
-                                        </div>
-                                </form>
-                        </div><!-- #box -->
-                        <div class="box">
-                                <h1>Meta</h1>
-                                <ul>
-                                        <li><a href="http://feeds.feedburner.com/writepermission">RSS feed</a></li>
-                                </ul>
-                        </div><!-- #box -->
-                        <div class="box">
-                                <h1>About</h1>
-                                <ul>
-                                        <li><a href="http://tonotdo.com">Personal page</a></li>
-                                        <li>Twitter: <a href="http://twitter.com/To1ne">@To1ne</a></li>
-                                </ul>
-                        </div><!-- #box -->
-                </div><!-- #side -->
-        </div>
+        {% if paginator.total_pages > 1 %}
+        <ul id="nav">
+          {% capture prevattr %}
+          {% if paginator.previous_page %}
+          {% if paginator.previous_page > 1 %}
+          href="/page{{ paginator.previous_page }}"
+          {% else %}
+          href="/"
+          {% endif %}
+          {% else %}
+          class="hide"
+          {% endif %}
+          {% endcapture %}
+          <li class="prev"><a {{ prevattr | strip_newlines | remove:'     ' }} title="Go to previous page">&laquo; Previous</a></li>
+          <li class="current">Page <strong>{{ paginator.page }}</strong> of <strong>{{ paginator.total_pages }}</strong></li>
+          {% capture nextattr %}
+          {% if paginator.next_page %}
+          href="/page{{ paginator.next_page }}"
+          {% else %}
+          class="hide"
+          {% endif %}
+          {% endcapture %}
+          <li class="next"><a {{ nextattr | strip_newlines | remove:'     ' }} title="Go to next page">Next &raquo;</a></li>
+        </ul>
+        {% endif %}
+      </div><!-- #content -->
+      <div id="side">
+        <div class="box">
+          <h1>Search</h1>
+          <form action="http://www.google.com/cse" id="cse-search-box">
+            <div>
+              <input type="hidden" name="cx" value="012756515914671374425:dcryjfcxqvc" />
+              <input type="hidden" name="cof" value="FORID:10" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <input type="text" name="q" value="search phrase" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" id="search-text" />
+              <!--<input type="submit" name="sa" value="Search" />-->
+            </div>
+          </form>
+        </div><!-- #box -->
+        <div class="box">
+          <h1>Meta</h1>
+          <ul>
+            <li><a href="http://feeds.feedburner.com/writepermission">RSS feed</a></li>
+          </ul>
+        </div><!-- #box -->
+        <div class="box">
+          <h1>About</h1>
+          <ul>
+            <li><a href="http://tonotdo.com">Personal page</a></li>
+            <li>Twitter: <a href="http://twitter.com/To1ne">@To1ne</a></li>
+          </ul>
+        </div><!-- #box -->
+      </div><!-- #side -->
+    </div>
 
-        <script type="text/javascript">
-        //<![CDATA[
+    <script type="text/javascript">
+      //<![CDATA[
         (function() {
                 var links = document.getElementsByTagName('a');
                 var query = '?';
@@ -94,17 +94,17 @@
                 document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/writepermission/get_num_replies.js' + query + '"></' + 'script>');
                 })();
         //]]>
-        </script>
+    </script>
 
-        <script type="text/javascript">
-                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-                try{
-                        var pageTracker = _gat._getTracker("UA-10186252-3");
-                        pageTracker._trackPageview();
-                        } catch(err) {}
-        </script>
-</body>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try{
+      var pageTracker = _gat._getTracker("UA-10186252-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
 </html>
