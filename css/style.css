@@ -288,8 +288,8 @@ h2, h3, h4, h5, h6 {
 #dasher h1 {
   color: #B25756;
   font: 5.5em monospace;
-  height: 6em;
-  margin-bottom: -6em;
+  height: 1em;
+  margin-bottom: -1em;
 }
 #dasher .title {
   z-index: 10;
@@ -302,7 +302,6 @@ h2, h3, h4, h5, h6 {
 */
 #dasher .pre {
   margin-left: -9999px;
-  /*margin: 0 0 -1.01em -9999px;*/
   overflow: hidden;
   /*position: fixed; TODO fix Safari and Chrome*/
   right: 0;
