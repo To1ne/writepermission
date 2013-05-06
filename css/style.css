@@ -13,7 +13,7 @@
 *    - bright-red:    #B25756
 *    - subtle-red:    #DDD5B9
 *    - dimmed:        #666666
-*    - blueish:               #2D8BCF
+*    - blueish:       #2D8BCF
 *    - redish:        #D45755
 *
 **************************************************/
@@ -268,24 +268,38 @@ h2, h3, h4, h5, h6 {
   min-width: 960px;
   overflow: hidden;
   position: absolute;
-  top: 40px;
+  top: 10px;
   white-space: nowrap;
   width: 100%;
 }
 /* Dasher title */
+#dasher-fixed {
+  left: 50%;
+  margin-left: -480px;
+  position: fixed;
+}
 #dasher {
   display: block;
-  margin: 20px auto 40px;
+  margin: 0px auto 40px;
   overflow: visible;
   position: relative;
   width: 960px;
 }
-
+#dasher-fixed .pre {
+  margin-left: -9999px;
+  overflow: hidden;
+  right: 0px;
+  text-align: right;
+  width: 9999px;
+}
+#dasher-fixed .post {
+  z-index: 4;
+}
 #dasher h1, #dasher h2 {
   margin: 0;
   position: relative;
 }
-#dasher h1 {
+#dasher h1, #dasher-fixed h1 {
   color: #B25756;
   font: 5.5em monospace;
   height: 1em;
@@ -329,7 +343,7 @@ h2, h3, h4, h5, h6 {
 *************************/
 #content {
   float: left;
-  padding-top: 200px;
+  padding-top: 150px;
   overflow: visible;
   width: 580px;
 }
@@ -402,6 +416,18 @@ h2, h3, h4, h5, h6 {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+}
+
+/**************************
+* Smaller screens
+*************************/
+@media screen and (max-width: 960px) {
+  #dasher-fixed {
+    left: 0;
+    margin-left: 0;
+  }
+  /* TODO #content margin */
+  /* TODO #side */
 }
 
 /**************************

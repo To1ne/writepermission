@@ -15,14 +15,17 @@
   <body>
     <div id="container">
       <div id="header">
-        <div id="dasher">{% capture dashing %}{% for i in (1..150) %}-{% endfor %}{% endcapture %}
+        <div id="dasher-fixed">{% capture dashing %}{% for i in (1..150) %}-{% endfor %}{% endcapture %}
           <h1 class="pre" >{{ dashing }}</h1>
+          <h1 class="post">{{ dashing }}</h1>
+        </div><!-- #dasher-fixed -->
+        <div id="dasher">
           <h1 class="undash">---------</h1>
           <h1 class="title"><a href="/" title="rw-r--r--">rw-r--r--</a></h1>
-          <h1 class="post">{{ dashing }}</h1>
           <h2>permitted to write...</h2>
         </div><!-- #dasher -->
       </div><!-- #header -->
+
       <div id="content">
         {{ content }}
 
