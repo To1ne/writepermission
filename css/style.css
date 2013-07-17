@@ -421,7 +421,8 @@ h2, h3, h4, h5, h6 {
 /**************************
 * Smaller screens
 *************************/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
+  /* should be at 960, but this seems to be better */
   #dasher-fixed {
     left: 0;
     margin-left: 0;
