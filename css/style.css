@@ -249,6 +249,11 @@ hr {
   border-left: none;
   width: 30%;
 }
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Major container */
 #container {
   overflow: hidden;
