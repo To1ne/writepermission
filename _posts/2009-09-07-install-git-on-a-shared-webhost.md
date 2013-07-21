@@ -14,7 +14,7 @@ Recently I ran into an article about using [git](http://git-scm.com/) to upload 
 Before we can download `git`, we need to know which Linux distribution your server is using. This is required so the `git` executable will be able to use the correct libraries.
 To find out which kernel your server is running, log in to your server via ssh and type the command:
 {% highlight bash %}
-cat /etc/\*-release
+cat /etc/*-release
 {% endhighlight %}
 
 On my server this returned `CentOS release 5.3 (Final)`.
