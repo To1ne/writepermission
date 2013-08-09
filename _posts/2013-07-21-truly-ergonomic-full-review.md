@@ -9,7 +9,9 @@ Let me go over the features.
 
 ## Key placement
 At Truly Ergonomic, they call it [Columnar Key placement](http://www.trulyergonomic.com/store/index.php?route=product/category&path=20_26). Basically, this means the keys are placed in non-staggered columns. In theory, your fingers have to travel less far to reach keys that are not on the home row. 
+
 ![Truly Ergonomic key placements](/content/2013/07/Truly_Ergonomic_Keyboard-209-Split_Symmetrical.jpg)
+
 In other reviews I've read this key placement has a steep learning curve, but I did not expect this layout would be a big issue.
 
 I was wrong...
@@ -55,6 +57,7 @@ I am still mailing the manufacturer about this issue.
 
 ## Compactness
 The keyboard is really compact. And that is awesome.
+
 ![Truly Ergonomic MS Natural 4000 Comparison](/content/2013/07/Truly_Ergonomic_Mechanical_Keyboard_207_Microsoft_Natural_4000_Comparison.jpg)
 
 ## Symmetric layout
@@ -81,6 +84,7 @@ This places Alt at a similar location as on a regular keyboard. Unfortunately th
 In the beginning it was hard to type SPACE with the right hand (only). Until now I still use this placement.
 
 But I am thinking about remapping the middle Delete key to Alt (maybe more on that in a next post).
+
 ![Truly Ergonomic Key locations](/content/2013/07/TrulyErgonomic_KeyLocation209.jpg)
 
 To change the keymapping, I used [KeyTweak](http://www.tucows.com/preview/327616) on Windows.
