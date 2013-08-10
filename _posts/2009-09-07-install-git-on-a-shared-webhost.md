@@ -72,5 +72,6 @@ The reason for this problem was that `$HOME/usr/libexec/git-core` was not added 
 
 ## Further reading
 So now you have `git` up and running on your server and you can use it to upload your site. Read about it:
+
 - [Websites updaten met git](http://www.wolfslittlestore.be/2009/06/websites-updaten-met-git/) - in Dutch
 - [Using Git to manage a web site](http://toroid.org/ams/git-website-howto) - original article in English
