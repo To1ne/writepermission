@@ -7,7 +7,7 @@ wordpress_url: http://blog.tonotdo.com/?p=176
 ## Introduction
 This is a technical post about compiling a C/C++ application using [gcc](http://en.wikipedia.org/wiki/GNU_Compiler_Collection). This post requires understanding of [C programming](http://en.wikipedia.org/wiki/C_%28programming_language%29) and building it.
 
-I'm about to discribe a problem that made my loose several hours searching for the problem, while the solution was quite simple.
+I'm about to discribe a problem that made me lose several hours searching for the problem, while the solution was quite simple.
 
 ## Situation
 I was working on an application that uses two [static libraries](http://en.wikipedia.org/wiki/Static_library), or so called archives. My application uses functions from one library, while that library uses functions from another library. This situation sound complex, but I'll explain using an example.
