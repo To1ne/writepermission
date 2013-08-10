@@ -185,7 +185,8 @@ a:hover, a:active {
 }
 /* Code */
 pre, code {
-  font: 1em monospace;
+  font-size: 0.9em;
+  font-family: Courier, monospace;
 }
 pre code {
   background: inherit;
@@ -309,7 +310,7 @@ h2, h3, h4, h5, h6 {
 #dasher h1, #dasher-fixed h1 {
   color: #B25756;
   font-size: 5.5em;
-  font-family: "DejaVu Sans Mono", Monaco, "Courier New", Courier, monospace;
+  font-family: Courier, monospace;
   height: 1em;
   margin-bottom: -1em;
 }
