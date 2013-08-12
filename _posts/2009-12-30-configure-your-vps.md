@@ -4,15 +4,55 @@ title: Configure your VPS
 wordpress_id: 286
 wordpress_url: http://blog.writepermission.com/?p=286
 ---
-## Basic tools
-Some basic tools will make it easy to set up your VPS, so we install them first:
+## Preparation
+Let's start with some basic preparation.
 
-- Install VIM text editor using the command:
+- Install additional GPG keys:
+	{%highlight bash %}
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
+rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
+{% endhighlight %}
+
+- Install `rpmforge-release` package:
+	{% highlight bash %}
+rpm --install http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
+{% endhighlight %}
+
+- Install updates:
+	{% highlight bash %}
+yum update
+{% endhighlight %}
+
+- Install ssh authorized key for faster login via `ssh`:
+	{% highlight bash %}
+mkdir -p ~/.ssh
+ssh-copy-id -i .ssh/id_rsa.pub root@yourdomainname.tld
+{% endhighlight %}
+
+
+## Test tools
+Later on we'll use some tools to modify configurations and run tests, so we install those too:
+
+- Install a command line text editor, `vim` can be installed using `yum`:
 	{% highlight bash %}
 yum install vim-minimal vim-common vim-enhanced
 {% endhighlight %}
 
-- Install telnet (used to test later on) TODO:
+- ... or you can build `emacs` yourself:
+	{% highlight bash %}
+ mkdir -p /usr/src/emacs
+cd /usr/src/emacs
+wget http://ftp.gnu.org/gnu/emacs/emacs-22.3.tar.gz
+tar -xzf emacs-22.3.tar.gz
+cd emacs-22.3
+./configure
+make
+make test
+make install
+{% endhighlight %}
+
+=
+- Install telnet (used to test later on):
 	{% highlight bash %}
 yum install telnet
 {% endhighlight %}
@@ -22,16 +62,25 @@ yum install telnet
 yum install links
 {% endhighlight %}
 
-- Install GPG keys:
+
+## Optional tools
+I've installed the following tools too. These are not required, but might be useful some day.
+- Install and activate `zsh`:
 	{% highlight bash %}
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*
-rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt
+yum install zsh
+ln -sf /bin/zsh /bin/sh
 {% endhighlight %}
 
-- Install rpmforge-release package:
+- Install `git`:
 	{% highlight bash %}
-rpm --import http://apt.sw.be/redhat/el5/en/i386/RPMS.dag/rpmforge-release-0.3.6-1.el5.rf.i386.rpm
+yum install git
 {% endhighlight %}
+
+- Install `oh-my-zsh`:
+	{% highlight bash %}
+wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+{% endhighlight %}
+
 
 ## Basic settings
 Next we apply some basic settings:
@@ -46,11 +95,6 @@ Next we apply some basic settings:
 NETWORKING="yes"
 HOSTNAME="yourdomainname.tld"
 GATEWAY="216.66.76.1"
-{% endhighlight %}
-
-- Install updates:
-	{% highlight bash %}
-yum update
 {% endhighlight %}
 
 - Get additional yum repositories:
@@ -127,7 +171,7 @@ chkconfig --levels 235 pure-ftpd on
 First we need to install and configure postfix:
 {% highlight bash %}
 yum remove sendmail
-yum install postfix
+yum install postfix dovecot
 {% endhighlight %}
 
 This removes sendmail, because we use postfix instead.
@@ -139,7 +183,7 @@ myorigin = $mydomain
 inet_interfaces = all
 mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 {% endhighlight %}
-TODO maybe use the postfix -e command
+TODO add the postconf -e command
 
 All the lines are already in the file you just need to uncomment them and edit `yourdomainname`.
 
@@ -207,6 +251,8 @@ group = postfix
 
 Now just start them:
 {% highlight bash %}
+chkconfig --level 235 saslauthd on
+/etc/init.d/saslauthd start
 chkconfig --levels 235 postfix on
 /etc/init.d/postfix start
 chkconfig --levels 235 dovecot on
@@ -244,9 +290,9 @@ chmod 700 /usr/share/roundcube/temp /usr/share/roundcube/logs
 
 Configure the database:
 {% highlight bash %}
-mysql --username=root --password=yourrootsqlpassword
+mysql --user=root --password=yourrootsqlpassword
 CREATE DATABASE roundcubemail;
-GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcubeuser@localhost IDENTIFIED BY 'yourroundcubepass';
+GRANT ALL PRIVILEGES ON roundcubemail.* TO roundcube@localhost IDENTIFIED BY 'yourroundcubepass';
 FLUSH PRIVILEGES;
 {% endhighlight %}
 
@@ -262,8 +308,41 @@ mv /usr/share/roundcube/installer /usr/share/roundcube/.installer
 chmod 000 /usr/share/roundcube/.installer
 {% endhighlight %}
 
+MORE TODO
+install extensions:
+{% highlight bash %}
+yum install php-pecl-fileinfo php-dom php-gd
+{% endhighlight %}
+
+add to `/etc/php.ini`
+{% highlight text %}
+extension=fileinfo.so
+extension=domxml.so
+extension=gd.so
+extension=mcrypt.so
+
+
+date.timezone = “Europe/Brussels”
+
+
+rpm --import http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka    --> php 5.2+
+
+
+vim /etc/yum.repos.d/utterramblings.repo
+
+add >
+[utterramblings]
+name=Jason's Utter Ramblings Repo
+baseurl=http://www.jasonlitka.com/media/EL$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
+
+{% endhighlight %}
+
 ## Sources
-- [The Perfect Server - CentOS 5.3 x86_64 \[ISPConfig 3\]](http://www.howtoforge.com/perfect-server-centos-5.3-x86_64-ispconfig-3")</a>
+http://www.jasonlitka.com/yum-repository/
+- [The Perfect Server - CentOS 5.3 x86_64 \[ISPConfig 3\]](http://www.howtoforge.com/perfect-server-centos-5.3-x86_64-ispconfig-3)</a>
 - [The Perfect Setup - CentOS 4.3 (64-bit)](http://www.howtoforge.com/perfect_setup_centos_4.3)
 - [Quick Linux Server Installation](http://www.mysql-apache-php.com/)
 - [Installing PHP 5.2.x or 5.3.x on RedHat ES5, CentOS 5, etc](http://bluhaloit.wordpress.com/2008/03/13/installing-php-52x-on-redhat-es5-centos-5-etc/)
