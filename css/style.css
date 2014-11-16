@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: normal;
   margin: 0 0 21px 0;
+  text-transform: lowercase;
 }
 h1 {
   font-size: 1.8em;
@@ -431,8 +432,8 @@ h2, h3, h4, h5, h6 {
 }
 
 /**************************
-* Smaller screens
-*************************/
+ * Smaller screens
+ *************************/
 @media screen and (max-width: 975px) {
   /* should be at 960, but this seems to be better */
   #dasher-fixed {
