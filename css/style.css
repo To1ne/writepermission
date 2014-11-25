@@ -35,7 +35,7 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
 /* Body */
 body {
   line-height: 24px;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+  font-family: Courier, monospace;
 /*  background: #E8E8CA;*/
 }
 /* Headers */
@@ -221,7 +221,7 @@ object {
 /* Forms */
 input, textarea {
   font-size: 1em;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+  font-family: Courier, monospace;
   padding: 3px;
 }
 :focus {
@@ -311,7 +311,6 @@ h2, h3, h4, h5, h6 {
 #dasher h1, #dasher-fixed h1 {
   color: #B25756;
   font-size: 5.5em;
-  font-family: Courier, monospace;
   height: 1em;
   margin-bottom: -1em;
 }
@@ -343,7 +342,8 @@ h2, h3, h4, h5, h6 {
 }
 #dasher h2 {
   color: #666666;
-  font: normal normal normal 16px/20px Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 1.1em;
   margin-top: 4.5em;
   z-index: 6;
 }
@@ -356,7 +356,6 @@ h2, h3, h4, h5, h6 {
 }
 #content h1 {
   margin-bottom: 5px;
-  font-style: italic;
 }
 .postdate {
   color: #666666;
