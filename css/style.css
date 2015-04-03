@@ -18,7 +18,7 @@
 *
 **************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
 /**************************
 * General styles
@@ -37,7 +37,7 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
 /* Body */
 body {
   line-height: 24px;
-  font-family: 'Inconsolata', Courier, monospace;
+  font-family: 'PT Mono', Courier, monospace;
 /*  background: #E8E8CA;*/
 }
 /* Headers */
@@ -189,7 +189,7 @@ a:hover, a:active {
 /* Code */
 pre, code {
   font-size: 0.9em;
-  font-family: 'Inconsolata', Courier, monospace;
+  font-family: 'PT Mono', Courier, monospace;
 }
 pre code {
   background: inherit;
@@ -223,7 +223,7 @@ object {
 /* Forms */
 input, textarea {
   font-size: 1em;
-  font-family: 'Inconsolata', Courier, monospace;
+  font-family: 'PT Mono', Courier, monospace;
   padding: 3px;
 }
 :focus {
