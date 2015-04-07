@@ -1,4 +1,4 @@
 markdown: redcarpet
-highlighter: true
+highlighter: pygments
 permalink: /:year/:month/:title
 paginate: 30
