@@ -16,7 +16,7 @@ Until, I ran into the group buy on [Massdrop](https://www.massdrop.com).
 At the time I think it was the second time Massdrop opened the
 group buy and I didn't really hesitate to join the _drop_ (on
 2013-08-27 to be exact). The fact it came as a DIY kit might scare of
-some people, but in fact I was really looking forward to putting it
+some people, but I was actually looking forward to putting it
 together myself.
 
 ## Assembly
@@ -117,8 +117,6 @@ their configurator and now I also have fully functioning media keys
 [6]: http://ergodox-ez.com/ "ErgoDox EZ"
 [7]: http://configure.ergodox-ez.com/ "ErgoDox EZ Configurator"
 [8]: http://configure.ergodox-ez.com/keyboard_layouts/kraalq "Toon's layout on ErgoDox EZ Configurator"
-
-Recently Ergodox EZ released their configurator
 
 ## Thumb keys
 
