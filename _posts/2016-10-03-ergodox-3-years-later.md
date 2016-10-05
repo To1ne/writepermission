@@ -128,11 +128,13 @@ the ErgoDox is much more comfortable.
 ## Stabilizers
 
 The ErgoDox version I own does not have stabilizers on the 1x2.00 keys
-at the thumbs, and that's a shame. They really feel wobbly. I even
-have one of the switches that feels more wobbly than the other
-three. I think something inside broke, what decreases the stability of
-the switch. I probably should replace the switch (luckily Massdrop
-ships some spare switches), but I haven't found time for it yet.
+at the thumbs, and that's a shame. They really feel wobbly. After
+about one year of use one of the switches became more wobbly than the
+other three. So I replaced the switch (luckily Massdrop shipped some
+spare switches) and discovered it was actually broken. I hope the
+other do not break soon.
+
+![Broken key switch](https://c5.staticflickr.com/6/5069/29800553580_70ed0b264b_z.jpg)
 
 **Note:** If you are considering buying an ErgoDox: The new Infinity
 ErgoDox sold on Massdrop comes with stabilizers for the thumb keys.
