@@ -161,3 +161,17 @@ manufactured by a professional company.
 [9]: https://www.massdrop.com/buy/infinity-ergodox?referer=J5QZFC&mode=guest_open "Infinity ErgoDox Ergonomic Keyboard Kit"
 [10]: https://input.club/forums/topic/infinity-ergodox-update/#post-692
 [11]: http://ergodox-ez.com/ "ErgoDox EZ"
+
+
+## What's next
+
+I have pre-ordered a [keyboardio](https://keyboard.io) and I hope it
+will arrive before the end of the year. I am really looking forward to
+try it out.
+
+Other than that, I've also been eyeballing
+the [Kinesis Advantage 2][12] for a long time. But with already having
+2 (almost 3) keyboards laying around, so I'm not planning to get one
+in the near future.
+
+[12]: https://www.kinesis-ergo.com/shop/advantage2/ "Kinesis Advantage 2"
