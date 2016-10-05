@@ -7,33 +7,33 @@ This blog post is way over due, but hey, better late than never.
 ## Massdrop
 
 Back in 2013 I bought the [Truly Ergonomic keyboard][1].
-I enjoyed it, most of the time. But it boosted my interest in
-mechanical keyboards. And soon I discovered the design of the ErgoDox,
+I enjoyed it, most of the time. It did boost my interest in
+mechanical keyboards. Soon I discovered the design of the ErgoDox,
 with its open-source design for anyone to grab. Although 3D printing
 the case was a turn-down.
 
 Until, I ran into the group buy on [Massdrop](https://www.massdrop.com).
-At the time I think it was the second time Massdrop did open the
+At the time I think it was the second time Massdrop opened the
 group buy and I didn't really hesitate to join the _drop_ (on
 2013-08-27 to be exact). The fact it came as a DIY kit might scare of
-some people, but in my case I was really looking forward to putting it
+some people, but in fact I was really looking forward to putting it
 together myself.
 
 ## Assembly
 
 I joined in August, but it took until November before the ErgoDox was
 delivered. I was really excited when I received the parts and wanted
-to build right a way.
+to build it right a way.
 
-The assembly instructions on [Massdrop][1] are very clear and easy to
+The assembly instructions on [Massdrop][1] were very clear and easy to
 follow. I had chosen to use the surface mount diodes instead of
 through-hole diodes because I've read the latter would not really fit
 inside the case. The first few diodes I did apply where challenging
-(also because I haven't been soldering for a while), but fast I got
+(also because I haven't been soldering for a while), but soon I got
 the hang of it and in the end they all turned out OK.
 
 The other components were quite easy to apply, except for the
-micro-USB connector. I did accidentally drop some solder on the
+micro-USB connector. I accidentally dropped some solder on the
 PCB, and I really had trouble to clear the holes. Luckily I had some
 colleagues really skilled with a soldering iron to fix this (thanks
 Anton!).
@@ -68,10 +68,10 @@ really do not like the stiffer spring (actuation force of 55 cN versus
 45 cN on Cherry MX Brown and 50 cN on Cherry MX Blue), so I'm happy I
 didn't get Clears.
 
-After using Cherry MX Blues for a while, I prefer Brown switches over
-Blue switches. Blue switches really sound more clicky and compared to
-Brown. The pitch of the Blue sound is higher than the Brown sound and
-this makes (IMHO) sound of Brown less distractive.
+After using Cherry MX Blues for a while, I still prefer Brown switches
+over Blue switches. Blue switches really sound more clicky when
+compared to Brown. The pitch of the Blue sound is higher than the
+Brown sound and this makes (IMHO) the sound of Brown less distractive.
 
 ### Damper rings
 
@@ -90,11 +90,12 @@ sound like Brown switches, but it is better.
 
 ## Layout
 
-After being used to the TECK, again I had to learn to type on this
-keyboard. Massdrop provides a nifty [Configurator][4] to customize the
-placement of the keys. It took me several iteration to find a layout I
-did like. Some layout changes were really challenging (e.g. like
-moving the <kbd>RETURN</kbd> key). But I ended up with [this layout][5].
+After being used to the TECK, I had to learn to type on this
+keyboard (again). Massdrop provides a nifty [Configurator][4] to
+customize the placement of the keys. It took me several iterations to
+find a layout I did like. Some layout changes were really challenging
+(e.g. like moving the <kbd>RETURN</kbd> key). But I ended up
+with [this layout][5].
 
 What I like most about this layout is the symmetrical placement of
 the modifier keys: <kbd>Ctrl</kbd>, <kbd>Shift</kbd>, <kbd>Alt</kbd>
@@ -110,7 +111,7 @@ press <kbd>Ctrl</kbd>+<kbd>a</kbd> I am using my left hand to press
 
 [ErgoDox EZ][6], manufacturers of completely built ErgoDoxes, recently
 released their [configurator][7]. I have migrated [my layout][8] to
-their configurator and now I also I have fully functioning media keys
+their configurator and now I also have fully functioning media keys
 (Volume Up/Down, Play/Pause, Next/Previous).
 
 [6]: http://ergodox-ez.com/ "ErgoDox EZ"
@@ -148,14 +149,14 @@ highly recommend you buying an ErgoDox because:
  - Useful thumb keys
  - Ergonomic split layout
 
-If you consider buying an ErgoDox. I expect soon Massdrop will open a
-new drop of the [Ergodox Infinity][9]. I did recently hold the
+If you consider buying an ErgoDox. I expect Massdrop to open a
+new drop of the [Ergodox Infinity][9] soon. I did recently hold the
 Infinity ErgoDox, and I like the quality. It is [really cool][10] they
 use USB to interconnect the halves.
 
-As alternative, I also heard many good things about
+As alternative, I've also heard many good things about
 the [ErgoDox EZ][11]. It's the design of the original ErgoDox,
-manufacturer by a professional company.
+manufactured by a professional company.
 
 [9]: https://www.massdrop.com/buy/infinity-ergodox?referer=J5QZFC&mode=guest_open "Infinity ErgoDox Ergonomic Keyboard Kit"
 [10]: https://input.club/forums/topic/infinity-ergodox-update/#post-692
