@@ -6,7 +6,7 @@ This blog post is way over due, but hey, better late than never.
 
 ## Massdrop
 
-Back in 2013 I bought the [Truly Ergonomic keyboard][1].
+Back in 2013 I bought the [Truly Ergonomic keyboard](/2013/07/truly-ergonomic-full-review/).
 I enjoyed it, most of the time. It did boost my interest in
 mechanical keyboards. Soon I discovered the design of the ErgoDox,
 with its open-source design for anyone to grab. Although 3D printing
