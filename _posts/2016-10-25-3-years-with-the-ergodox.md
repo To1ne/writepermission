@@ -53,7 +53,7 @@ connector), because all switches were working properly on the first
 try. This was a big relief, because I really didn't want to mess up a
 $256 keyboard (yes, I paid exactly $0b100000000).
 
-**Note:** For those considering to build your own Ergodox: The DIY
+**Note:** For those considering to build their own Ergodox: The DIY
 kits [Massdrop sells][2] these days have all the components except the
 switches already soldered on the board. The switches are the easiest
 to solder, so everyone should be able to build their own ErgoDox.
@@ -106,14 +106,15 @@ find a layout I did like. Some layout changes were really challenging
 (e.g. like moving the <kbd>RETURN</kbd> key). But I ended up
 with [this layout][5].
 
-[![ErgoDox keyboard layout Layer 0](https://c4.staticflickr.com/6/5661/30565031115_ec5ce5c6c9_z.jpg)](https://flic.kr/p/NyVLT6)
+[![ErgoDox keyboard layout Layer 0](/content/2016/10/ergodox-layout.png)][5]
 
 What I like most about this layout is the symmetrical placement of
 the modifier keys: <kbd>Ctrl</kbd>, <kbd>Shift</kbd>, <kbd>Alt</kbd>
 and <kbd>Cmd</kbd>. The placement makes it possible to press the
 modifier key with one hand, and the letter with the other hand. So to
 press <kbd>Ctrl</kbd>+<kbd>a</kbd> you can use your right hand to press
-<kbd>Ctrl</kbd> and your left hand to press <kbd>a</kbd>.
+<kbd>Ctrl</kbd> and your left hand to press <kbd>a</kbd>, which really
+reduces stress in your hands.
 
 [4]: https://keyboard-configurator.massdrop.com/ext/ergodox "ErgoDox Layout Configurator"
 [5]: https://keyboard-configurator.massdrop.com/ext/ergodox/?referer=J5QZFC&hash=999ad39701e308b79cf7b9409e618d87
@@ -156,13 +157,14 @@ I love my ErgoDox. It's the best keyboard I own, so far. And I would
 highly recommend you buying an ErgoDox because:
 
  - Open-source design
+ - Programmable key layout
  - Completely customizable firmware
  - Columnar key placement
- - Useful thumb keys
+ - Easy to reach thumb keys
  - Ergonomic split layout
 
 If you consider buying an ErgoDox, yesterday Massdrop opened a
-new drop of the [Infinity Ergodox][9]. I did recently touched the
+new drop of the [Infinity Ergodox][9]. I recently touched the
 Infinity ErgoDox, and I like the quality. It is [really cool][10] they
 use USB to interconnect the halves.
 
@@ -187,6 +189,6 @@ Other than that, I've also been eyeballing the
 in the near future.
 I've been considering to cancel my keyboard.io pre-order and get a
 Advantage 2 instead, but it is just too expensive to ship it to
-Belgium (about $450 - $500).
+Belgium (between $450 and $500).
 
 [12]: https://www.kinesis-ergo.com/shop/advantage2/ "Kinesis Advantage 2"
