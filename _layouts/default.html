@@ -58,15 +58,9 @@
       <div id="side">
         <div class="box">
           <h1>Search</h1>
-          <form action="http://www.google.com/cse" id="cse-search-box">
-            <div>
-              <input type="hidden" name="cx" value="012756515914671374425:dcryjfcxqvc" />
-              <input type="hidden" name="cof" value="FORID:10" />
-              <input type="hidden" name="ie" value="UTF-8" />
-              <input type="text" name="q" value="search phrase" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" id="search-text" />
-              <!--<input type="submit" name="sa" value="Search" />-->
-            </div>
-          </form>
+          <div class="search-wrapper">
+            <iframe class="search-box" src="https://duckduckgo.com/search.html?site=writepermission.com&prefill=search"></iframe>
+          </div>
         </div><!-- #box -->
         <div class="box">
           <h1>Meta</h1>

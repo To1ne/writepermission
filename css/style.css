@@ -432,6 +432,16 @@ h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
+.search-wrapper {
+  margin: 20px;
+  display: block;
+}
+.search-box {
+  border: none;
+  width: 100%;
+  height: 40px;
+}
+
 /**************************
  * Smaller screens
  *************************/
