@@ -1,5 +1,5 @@
 markdown: redcarpet
-highlighter: rb-pygments
+highlighter: rouge
 permalink: /:year/:month/:title
 paginate: 30
 gems: [jekyll-paginate]
