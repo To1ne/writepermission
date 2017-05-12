@@ -179,7 +179,7 @@ manufactured by a professional company.
 
 ## What's next
 
-I have pre-ordered a [keyboard.io](https://keyboard.io) and I hope it
+I have pre-ordered a [keyboard.io](https://shop.keyboard.io) and I hope it
 will arrive before the end of the year. I am really looking forward to
 give it a try.
 
