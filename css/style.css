@@ -8,7 +8,7 @@
 * Colors:
 *    - main:          #FFFFFF
 *    - dark:          #7F7F6E
-*    - bright:        #F2F2E2
+*    - bright:        #F2F2F2
 *    - dark-red:      #751816
 *    - bright-red:    #B25756
 *    - subtle:        #DDDDDD
@@ -17,8 +17,6 @@
 *    - redish:        #D45755
 *
 **************************************************/
-
-@import url(http://fonts.googleapis.com/css?family=PT+Mono);
 
 /**************************
 * General styles
@@ -37,8 +35,7 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
 /* Body */
 body {
   line-height: 24px;
-  font-family: 'PT Mono', Courier, monospace;
-/*  background: #E8E8CA;*/
+  font-family: 'Fira Code', Courier, monospace;
 }
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
@@ -149,7 +146,7 @@ li address, dd address {
 }
 /* Blockquotes */
 blockquote {
-  background: #F2F2E2;
+  background: #F2F2F2;
   border-left: 3px solid #BEBEA5;
   margin: 0 1.5em 1.5em 1.5em;
   padding: 0.2em 1em;
@@ -196,7 +193,7 @@ pre code {
   font-size: 1em;
 }
 pre {
-  background-color: #F2F2E2;
+  background-color: #F2F2F2;
   /*border: 1px solid #BEBEA5;*/
   line-height: 21px;
   margin-bottom: 21px;
@@ -204,7 +201,7 @@ pre {
   padding: 9px;
 }
 code {
-  background: #F2F2E2 none repeat scroll 0 0;
+  background: #F2F2F2 none repeat scroll 0 0;
   padding:0 3px;
 }
 /* Delete and insert */
@@ -282,6 +279,7 @@ h2, h3, h4, h5, h6 {
   top: 10px;
   white-space: nowrap;
   width: 100%;
+  font-variant-ligatures: none;
 }
 /* Dasher title */
 #dasher-fixed {
