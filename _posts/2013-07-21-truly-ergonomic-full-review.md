@@ -1,14 +1,16 @@
---- 
+---
 layout: post
 title: Truly Ergonomic - full review
+redirect_from: /2013/07/truly-ergonomic-full-review
 ---
+
 I've been meaning to write this post for a long time. But now it's finally here.
 
 Meanwhile I've been using the Truly Ergonomic computer keyboard (short _TECK_) for about 4 months now.
 Let me go over the features.
 
 ## Key placement
-At Truly Ergonomic, they call it [Columnar Key placement](http://www.trulyergonomic.com/store/index.php?route=product/category&path=20_26). Basically, this means the keys are placed in non-staggered columns. In theory, your fingers have to travel less far to reach keys that are not on the home row. 
+At Truly Ergonomic, they call it [Columnar Key placement](http://www.trulyergonomic.com/store/index.php?route=product/category&path=20_26). Basically, this means the keys are placed in non-staggered columns. In theory, your fingers have to travel less far to reach keys that are not on the home row.
 
 ![Truly Ergonomic key placements](/content/2013/07/Truly_Ergonomic_Keyboard-209-Split_Symmetrical.jpg)
 

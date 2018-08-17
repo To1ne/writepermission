@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Flag All Those Tweets Read
 wordpress_id: 111
 wordpress_url: http://blog.tonotdo.com/?p=111
+redirect_from: /2009/05/flag-all-those-tweets-read
 ---
+
 ## Problem
 Every time I switched between Twitter client (client at work, client at home, client on mobile phone) I lost track of which tweets I've read. Although it's not required to read all tweets (see [Twitter isn't email](http://www.twitterisntemail.com/)), but I like to do it.
 I've been thinking for a solution to this problem and I think I've found one.

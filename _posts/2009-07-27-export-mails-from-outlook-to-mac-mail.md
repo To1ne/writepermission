@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Export mails from Outlook to Mac Mail
 wordpress_id: 162
 wordpress_url: http://blog.tonotdo.com/?p=162
+redirect_from: /2009/07/export-mails-from-outlook-to-mac-mail
 ---
+
 ## Problem
 Recently I've bought a new iMac. Real great machine, but I used to be a Windows Vista user, so I needed to export files and settings to Mac. Most of it was no problem, the only problem was: Email. On Windows I did use Microsoft Outlook to access my Hotmail, Gmail and own domain email account.
 
