@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Did you ever think about using a mindmap?
 wordpress_id: 135
 wordpress_url: http://blog.tonotdo.com/?p=135
+redirect_from: /2009/06/did-you-ever-think-about-using-a-mindmap
 ---
+
 ## Introduction
 At work we've been using [Visual Mind](http://www.visual-mind.com/). It is a [mindmapping](http://mind42.com/mindmaps) application, which allows users to capture and organize information in a visual manner.
 

@@ -1,5 +1,4 @@
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:title
+permalink: /:slug
 paginate: 30
-gems: [jekyll-paginate]

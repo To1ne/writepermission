@@ -1,7 +1,9 @@
 ---
 layout: post
 title: My cellphone history
+redirect_from: /2010/12/my-cellphone-history
 ---
+
 Just wanted to draw a history on the mobile phones I've used in my life.
 
 ## Nokia 3310 (end 2000 till 2001)

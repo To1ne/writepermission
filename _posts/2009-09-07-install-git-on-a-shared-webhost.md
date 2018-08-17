@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Install git on a shared webhost
 wordpress_id: 183
 wordpress_url: http://www.writepermission.com/?p=183
+redirect_from: /2009/09/install-git-on-a-shared-webhost
 ---
+
 ## Introduction
 Recently I ran into an article about using [git](http://git-scm.com/) to upload your site (see links at the bottom how to). But off course, this requires to have `git` installed on your hosting. My host (via [TurtleHost.be](http://www.turtlehost.be/)) does not have it. So I was thinking, why not install it myself. Idea sounded more simple than doing it... .
 

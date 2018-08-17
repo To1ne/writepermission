@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: More useful space, less annoying advertisements
 wordpress_id: 10
 wordpress_url: http://blog.tonotdo.com/?p=10
+redirect_from: /2009/04/more-useful-space-less-annoying-advertisements
 ---
+
 ## Introduction
 In a search for a great webapp I ran into a problem: advertisements reducing the useful space. So I've been searching for a way to remove those advertisements and take full advantage of my screen size.
 To do this I've used some Firefox Addons...

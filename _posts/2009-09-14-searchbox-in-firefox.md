@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Searchbar in Firefox
 wordpress_id: 241
 wordpress_url: http://blog.writepermission.com/?p=241
+redirect_from: /2009/09/searchbox-in-firefox
 ---
+
 ## Introduction
 One of the hot topics of the last years is [usability](http://en.wikipedia.org/wiki/Usability). Consistency can help improving the usability, but I think Firefox 3 fails in consistency when you use the searchbar on three different operation systems: Linux, Windows and Mac OSX.
 
