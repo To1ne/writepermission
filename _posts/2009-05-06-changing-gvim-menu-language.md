@@ -3,7 +3,7 @@ layout: post
 title: Change the gVim menu language
 wordpress_id: 74
 wordpress_url: http://blog.tonotdo.com/?p=74
-redirect_from: /2009/05/changing-gvim-menu-language
+redirect_from: /2009/05/changing-gvim-menu-language/
 ---
 
 ## Problem

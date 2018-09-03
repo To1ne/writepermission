@@ -3,7 +3,7 @@ layout: post
 title: "LaTeX on Windows: Installing MikTeX"
 wordpress_id: 96
 wordpress_url: http://blog.tonotdo.com/?p=96
-redirect_from: /2009/05/latex-on-windows-installing-miktex
+redirect_from: /2009/05/latex-on-windows-installing-miktex/
 ---
 
 ##Introduction

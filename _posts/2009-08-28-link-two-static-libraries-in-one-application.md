@@ -3,7 +3,7 @@ layout: post
 title: Link two static libraries in one application
 wordpress_id: 176
 wordpress_url: http://blog.tonotdo.com/?p=176
-redirect_from: /2009/08/link-two-static-libraries-in-one-application
+redirect_from: /2009/08/link-two-static-libraries-in-one-application/
 ---
 
 ## Introduction

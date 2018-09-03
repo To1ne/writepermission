@@ -3,7 +3,7 @@ layout: post
 title: Hello world!
 wordpress_id: 1
 wordpress_url: http://blog.tonotdo.com/?p=1
-redirect_from: /2009/01/hello-world
+redirect_from: /2009/01/hello-world/
 ---
 
 ## Welcome

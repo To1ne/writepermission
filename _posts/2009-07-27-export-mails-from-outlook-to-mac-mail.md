@@ -3,7 +3,7 @@ layout: post
 title: Export mails from Outlook to Mac Mail
 wordpress_id: 162
 wordpress_url: http://blog.tonotdo.com/?p=162
-redirect_from: /2009/07/export-mails-from-outlook-to-mac-mail
+redirect_from: /2009/07/export-mails-from-outlook-to-mac-mail/
 ---
 
 ## Problem

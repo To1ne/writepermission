@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 years with the ErgoDox
-redirect_from: /2016/10/3-years-with-the-ergodox
+redirect_from: /2016/10/3-years-with-the-ergodox/
 ---
 
 ## How it started

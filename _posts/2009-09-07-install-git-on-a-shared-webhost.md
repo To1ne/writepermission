@@ -3,7 +3,7 @@ layout: post
 title: Install git on a shared webhost
 wordpress_id: 183
 wordpress_url: http://www.writepermission.com/?p=183
-redirect_from: /2009/09/install-git-on-a-shared-webhost
+redirect_from: /2009/09/install-git-on-a-shared-webhost/
 ---
 
 ## Introduction

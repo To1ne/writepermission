@@ -3,7 +3,7 @@ layout: post
 title: Flag All Those Tweets Read
 wordpress_id: 111
 wordpress_url: http://blog.tonotdo.com/?p=111
-redirect_from: /2009/05/flag-all-those-tweets-read
+redirect_from: /2009/05/flag-all-those-tweets-read/
 ---
 
 ## Problem

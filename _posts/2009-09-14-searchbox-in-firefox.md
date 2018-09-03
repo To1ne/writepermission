@@ -3,7 +3,7 @@ layout: post
 title: Searchbar in Firefox
 wordpress_id: 241
 wordpress_url: http://blog.writepermission.com/?p=241
-redirect_from: /2009/09/searchbox-in-firefox
+redirect_from: /2009/09/searchbox-in-firefox/
 ---
 
 ## Introduction

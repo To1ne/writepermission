@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First days with the Truly Ergonomic keyboard
-redirect_from: /2013/03/first-hours-with-the-truly-ergonomic-keyboard
+redirect_from: /2013/03/first-hours-with-the-truly-ergonomic-keyboard/
 ---
 
 ## First feel

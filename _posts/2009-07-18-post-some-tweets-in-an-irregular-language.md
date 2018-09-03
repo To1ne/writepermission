@@ -3,7 +3,7 @@ layout: post
 title: Post some tweets in an irregular language
 wordpress_id: 151
 wordpress_url: http://blog.tonotdo.com/?p=151
-redirect_from: /2009/07/post-some-tweets-in-an-irregular-language
+redirect_from: /2009/07/post-some-tweets-in-an-irregular-language/
 ---
 
 ## Problem

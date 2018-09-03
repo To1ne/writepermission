@@ -3,7 +3,7 @@ layout: post
 title: More useful space, less annoying advertisements
 wordpress_id: 10
 wordpress_url: http://blog.tonotdo.com/?p=10
-redirect_from: /2009/04/more-useful-space-less-annoying-advertisements
+redirect_from: /2009/04/more-useful-space-less-annoying-advertisements/
 ---
 
 ## Introduction

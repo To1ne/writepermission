@@ -3,7 +3,7 @@ layout: post
 title: Did you ever think about using a mindmap?
 wordpress_id: 135
 wordpress_url: http://blog.tonotdo.com/?p=135
-redirect_from: /2009/06/did-you-ever-think-about-using-a-mindmap
+redirect_from: /2009/06/did-you-ever-think-about-using-a-mindmap/
 ---
 
 ## Introduction

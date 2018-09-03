@@ -3,7 +3,7 @@ layout: post
 title: Get rid of those ugly blue Firefox menu buttons on Vista
 wordpress_id: 118
 wordpress_url: http://blog.tonotdo.com/?p=118
-redirect_from: /2009/05/get-rid-of-those-ugly-blue-firefox-menu-buttons-on-vista
+redirect_from: /2009/05/get-rid-of-those-ugly-blue-firefox-menu-buttons-on-vista/
 ---
 
 ## Problem

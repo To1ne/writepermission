@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Truly Ergonomic - full review
-redirect_from: /2013/07/truly-ergonomic-full-review
+redirect_from: /2013/07/truly-ergonomic-full-review/
 ---
 
 I've been meaning to write this post for a long time. But now it's finally here.
