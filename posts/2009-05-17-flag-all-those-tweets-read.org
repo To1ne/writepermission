@@ -1,0 +1,46 @@
+** Problem
+   :PROPERTIES:
+   :CUSTOM_ID: problem
+   :END:
+
+Every time I switched between Twitter client (client at work, client at
+home, client on mobile phone) I lost track of which tweets I've read.
+Although it's not required to read all tweets (see
+[[http://www.twitterisntemail.com/][Twitter isn't email]]), but I like
+to do it. I've been thinking for a solution to this problem and I think
+I've found one.
+
+** Solution
+   :PROPERTIES:
+   :CUSTOM_ID: solution
+   :END:
+
+I've created a new Twitter account [@fattr](http://twitter.com/fattr).
+*fattr* is an acronym for "*F*lag *A*ll *T*hose *T*weets *R*ead". The
+idea was: Send a direct message to @fattr to flag all current Tweets
+read. So all tweets received *after* sending the DM are *new*.
+
+#+CAPTION: FATTR logo
+[[http://fattr.tonotdo.com/img/logo.png]]
+
+** Realization
+   :PROPERTIES:
+   :CUSTOM_ID: realization
+   :END:
+
+Using the [[http://classes.verkoyen.eu/twitter/][PHP Twitter]] library
+of [[http://blog.verkoyen.eu/][Tijs Verkoyen]] @fattr will follow you
+back within 10 minutes. This is required to send DMs. The same library
+will make it possible to log in at [[http://fattr.tonotdo.com][website]]
+to read new tweets.
+
+** Future work
+   :PROPERTIES:
+   :CUSTOM_ID: future-work
+   :END:
+
+I really need to improve the code of the project and work on the page
+design. And I would like to promote use of this
+[@fattr](http://twitter.com/fattr) idea to Twitter client authors. So on
+every client you would be able to read new tweets, even if they are
+tagged by another client/location.
