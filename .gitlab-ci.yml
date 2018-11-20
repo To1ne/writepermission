@@ -1,28 +1,25 @@
-image: ruby:2.4
-
-variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
-
+image: iquiw/alpine-emacs
 before_script:
-  - bundle install
+  - apk update && apk add make
 
-test:
-  stage: test
-  script:
-  - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
+stages:
+  - publish
 
-pages:
-  stage: deploy
+.publish: &publish
   script:
-  - bundle exec jekyll build -d public
+  - make publish
   artifacts:
     paths:
     - public
+
+pages:
+  stage: publish
+  <<: *publish
   only:
+  - master
+
+pages:preview:
+  stage: publish
+  <<: *publish
+  except:
   - master

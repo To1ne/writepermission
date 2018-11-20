@@ -259,6 +259,9 @@ img {
   margin: 0 auto;
   max-width: 100%;
 }
+figcaption {
+  text-align: center;
+}
 /* Content */
 main, footer, header section {
   max-width: 960px;

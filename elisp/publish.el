@@ -80,6 +80,7 @@ PROJECT is the current project."
              :sitemap-filename "index.org"
              ;; :sitemap-title "rw-r--r-- | writepermission.com"
              :sitemap-style 'list
+             :sitemap-sort-files 'anti-chronologically
              ;; :sitemap-function 'rw/org-publish-sitemap
              :sitemap-format-entry 'rw/org-publish-sitemap-entry)
        (list "blog-static"
