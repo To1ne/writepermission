@@ -44,11 +44,14 @@
                 "html" "pdf"))
   "File types that are published as static files.")
 
-(defun rw/org-publish-sitemap (_title list)
+(defun rw/org-publish-sitemap (title list)
   "Default site map, as a string.
 LIST is an internal representation for the files to include, as
 returned by `org-list-to-lisp'.  PROJECT is the current project."
-  (concat (org-list-to-org list)))
+  (concat "#+TITLE: " title "\n"
+          "#+OPTIONS: title:nil\n\n"
+          "#+ATTR_HTML: :class sitemap\n"
+          (org-list-to-org list)))
 
 (defun rw/org-publish-sitemap-entry (entry style project)
   "Format for sitemap ENTRY, as a string.
@@ -78,10 +81,10 @@ PROJECT is the current project."
              :html-postamble-format (rw--pre/postamble-format 'postamble)
              :auto-sitemap t
              :sitemap-filename "index.org"
-             ;; :sitemap-title "rw-r--r-- | writepermission.com"
+             :sitemap-title "rw-r--r-- | writepermission.com"
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
-             ;; :sitemap-function 'rw/org-publish-sitemap
+             :sitemap-function 'rw/org-publish-sitemap
              :sitemap-format-entry 'rw/org-publish-sitemap-entry)
        (list "blog-static"
              :base-directory "."
