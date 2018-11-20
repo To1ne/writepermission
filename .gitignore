@@ -1,2 +1,9 @@
-_import
-_site
+# Where old import data is
+_import/
+
+# Auto generated index
+posts/index.org
+
+# Output
+public/
+.timestamps/

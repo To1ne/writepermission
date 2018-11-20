@@ -1,5 +1,0 @@
-markdown: kramdown
-highlighter: rouge
-permalink: /:slug/
-paginate: 30
-show_drafts: false

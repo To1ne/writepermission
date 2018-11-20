@@ -1,0 +1,77 @@
+#+TITLE: Did you ever think about using a mindmap?
+#+REDIRECT_FROM: /2009/06/24/did-you-ever-think-about-using-a-mindmap/
+#+DATE: <2009-06-24 Wed>
+
+** Introduction
+   :PROPERTIES:
+   :CUSTOM_ID: introduction
+   :END:
+
+At work we've been using [[http://www.visual-mind.com/][Visual Mind]].  It is a [[http://mind42.com/mindmaps][mindmapping]]
+application, which allows users to capture and organize information in
+a visual manner.
+
+I really liked the idea of that. So I was looking for a free tool to
+do this and I preferred it to be a webapp, so it would be easy to
+access from anywhere. I've found these three great tools. Basically
+they all do the same, all with subtle differences which makes it hard
+for me to decide which one is best.
+
+** Basic features
+   :PROPERTIES:
+   :CUSTOM_ID: basic-features
+   :END:
+
+The basic features are for all mindmap webapps the same:
+
+- Create nodes, child nodes
+- Add links to the nodes
+- Add icons to the nodes
+- Use of keyboard shortcuts
+- Importing and exporting maps (in several formats)
+- Public and private maps
+
+** Mindomo
+   :PROPERTIES:
+   :CUSTOM_ID: mindomo
+   :END:
+
+If I have to pick a winner, it would be [[http://www.mindomo.com][Mindomo]]. Probably the best
+feature is the nice "home" screen where you can manage folders, public
+& private maps. The downside is the Office 2007-like toolbar with the
+tabs, but it actually quite intuitive.
+
+[[./content/2009/06/mindomo.jpg]]
+
+** Mindmeister
+   :PROPERTIES:
+   :CUSTOM_ID: mindmeister
+   :END:
+
+Another great one is [[http://www.mindmeister.com/][Mindmeister]]. I really like the way it looks, it
+is just great! It has a nice sidebar with all tools, but it the
+beginning it is not very easy to find the correct tool fast.
+
+[[./content/2009/06/mindmeister.jpg]]
+
+** Mind42
+   :PROPERTIES:
+   :CUSTOM_ID: mind42
+   :END:
+
+Last but not least is [[http://mind42.com][Mind42]]. The thing I like the most about this one
+is that it seems to work really fast. If you drag the screen, the map
+moves real smooth. But it would be great if there where some kind of
+tool bar for quick access to the most important functions. This would
+make it easier then using the dropdown menu's on the nodes.
+
+[[./content/2009/06/mind42.jpg]]
+
+** Tip
+   :PROPERTIES:
+   :CUSTOM_ID: tip
+   :END:
+
+All the above tools are free, but when using the free version they
+show advertisements. I've found a small trick to remove these
+advertisements. You can read about it in a [[http://writepermission.com/2009/04/more-useful-space-less-annoying-advertisements/][earlier blog post]].

@@ -1,0 +1,12 @@
+#+TITLE: Hello world!
+#+REDIRECT_FROM: /2009/01/16/hello-world/
+#+DATE: <2009-01-16 Fri>
+
+** Welcome
+   :PROPERTIES:
+   :CUSTOM_ID: welcome
+   :END:
+
+In the last few weeks I came up with a couple of topics where I wanted
+to talk about. But I always forgot to post them somewhere. So now I've
+started this blog, to be prepared for the next topic...
