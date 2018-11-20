@@ -2,7 +2,7 @@
 * Main style sheet
 *
 * Project:      rw- blog
-* URL:                  writepermission.com
+* URL:          writepermission.com
 * Author:       Toon Claes
 *
 * Colors:
@@ -168,7 +168,7 @@ blockquote p {
 a img {
   border: none;
 }
-h1 a, h1 a:link, h1 a:active, h1 a:visited, h1.redir  {
+h1 a, h1 a:link, h1 a:active, h1 a:visited, h1.redir, h1  {
   color: #751816;
 }
 h1 a:hover {
@@ -243,12 +243,14 @@ th, td {
 }
 /* Horizontal rule */
 hr {
-  margin-bottom: 21px;
-  border-top: 3px dashed #DDDDDD;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
-  width: 30%;
+  border: none;
+}
+
+hr::after {
+  content: "------------";
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
 }
 /* Images */
 img {
@@ -257,9 +259,8 @@ img {
   margin: 0 auto;
   max-width: 100%;
 }
-/* Major container */
-#container {
-  overflow: hidden;
+/* Content */
+main, footer, header section {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -269,123 +270,64 @@ h2, h3, h4, h5, h6 {
 }
 
 /**************************
-* Header
+* Top header
 *************************/
-#header {
-  left: 0;
-  line-height: normal;
-  overflow: hidden;
+#top {
   position: absolute;
-  top: 10px;
-  white-space: nowrap;
   width: 100%;
-  font-variant-ligatures: none;
-}
-/* Dasher title */
-#dasher-fixed {
-  left: 50%;
-  margin-left: -480px;
-  position: fixed;
-}
-#dasher {
-  display: block;
-  margin: 0px auto 40px;
-  overflow: visible;
-  position: relative;
-  width: 960px;
-}
-#dasher-fixed .pre {
-  margin-left: -9999px;
   overflow: hidden;
-  right: 0px;
-  text-align: right;
-  width: 9999px;
+  left: 0;
+  top: 0;
 }
-#dasher-fixed .post {
-  z-index: 4;
+
+#top section {
+  display: flex;
+  flex-wrap: wrap;
+
 }
-#dasher h1, #dasher h2 {
-  margin: 0;
-  position: relative;
-}
-#dasher h1, #dasher-fixed h1 {
+#top h1 {
   color: #B25756;
   font-size: 5.5em;
-  height: 1em;
-  margin-bottom: -1em;
+  margin-top: 0.2em;
+  flex-shrink: 0;
+  font-variant-ligatures: none;
 }
-#dasher .title {
-  z-index: 10;
-}
-/* replaced by .undash
- * although there is still a bit of distortion on the edges
-#dasher a {
-  background: #E8E8CA;
-}
-*/
-#dasher .pre {
-  margin-left: -9999px;
-  overflow: hidden;
-  /*position: fixed; TODO fix Safari and Chrome*/
-  right: 0;
-  text-align: right;
-  width: 9999px;
-}
-#dasher .undash {
-  color: #FFFFFF;
-  /*font-weight: bold; for 'PT Mono'*/
-  z-index: 5;
-}
-#dasher .post {
-  /*position: fixed; TODO fix Safari and Chrome*/
-  z-index: 4;
-}
-#dasher h2 {
+
+#top h2 {
   color: #666666;
   font-weight: normal;
   font-size: 1.1em;
-  margin-top: 4.5em;
-  z-index: 6;
 }
 
-/**************************
-* Content
-*************************/
-#content {
-  padding-top: 150px;
-}
-#content h1 {
-  margin-bottom: 5px;
-}
-.postdate {
-  color: #666666;
-  font-style: italic;
-}
-
-/**************************
-* Page navigation
-*************************/
-#nav {
-  list-style: none;
-  position: relative;
-  text-align: center;
-  margin: 20px 0;
-}
-#nav a {
-  position: absolute;
-  top: 0;
-  width: 100px;
-}
-#nav .prev a {
-  left: 0;
-  text-align: left;
-}
-#nav .next a {
-  right: 0;
-  text-align: right;
-}
-#nav .hide {
+#top h2::before,
+footer h1::before {
   display: none;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before {
+  content: "------------------------------------------------------------------------------------------------------------------------------------------------------";
+  margin-left: -9999px;
+  width: 9999px;
+  display: inline-block;
+  text-align: right;
+  color: #B25756;
+  font-weight: normal;
+}
+
+#top h1::after {
+  content: "------------------------------------------------------------------------------------------------------------------------------------------------------";
+  color: #B25756;
+  font-weight: normal;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+main {
+  margin-top: 7em;
 }
 
 /**************************
