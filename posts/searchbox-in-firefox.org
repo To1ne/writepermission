@@ -1,13 +1,16 @@
+#+TITLE: Searchbar in Firefox
+#+REDIRECT_FROM: /2009/09/14/searchbox-in-firefox/
+#+DATE: <2009-09-14 Mon>
+
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
    :END:
 
-One of the hot topics of the last years is
-[[http://en.wikipedia.org/wiki/Usability][usability]]. Consistency can
-help improving the usability, but I think Firefox 3 fails in consistency
-when you use the searchbar on three different operation systems: Linux,
-Windows and Mac OSX.
+One of the hot topics of the last years is [[http://en.wikipedia.org/wiki/Usability][usability]]. Consistency can
+help improving the usability, but I think Firefox 3 fails in
+consistency when you use the searchbar on three different operation
+systems: Linux, Windows and Mac OSX.
 
 ** Example 1: Windows
    :PROPERTIES:
@@ -17,7 +20,7 @@ Windows and Mac OSX.
 On Windows shows the searchbar like this:
 
 #+CAPTION: Firefox searchbox Windows Vista
-[[/content/2009/09/ff-searchbox-windows.png]]
+[[./content/2009/09/ff-searchbox-windows.png]]
 
 I really like this layout. You can argue about the position of the
 buttons: "Next" on the right seems to make more sense, while "Next" on
@@ -28,11 +31,11 @@ the left will make it easier to push it.
    :CUSTOM_ID: example-2-linux
    :END:
 
-Next image shows how the searchbar looks on Linux (OpenSUSE 11 with KDE3
-in my case).
+Next image shows how the searchbar looks on Linux (OpenSUSE 11 with
+KDE3 in my case).
 
 #+CAPTION: Firefox searchbox Linux (OpenSUSE 11 KDE3)
-[[/content/2009/09/ff-searchbox-linux.png]]
+[[./content/2009/09/ff-searchbox-linux.png]]
 
 This layout is quite good. The icons are really clear what the buttons
 do and the position of the buttons makes sense.
@@ -45,7 +48,7 @@ do and the position of the buttons makes sense.
 On Mac OSX 10.5 the seachbar looks like this:
 
 #+CAPTION: Firefox searchbox on Mac OSX 10.5
-[[/content/2009/09/ff-searchbox-mac.png]]
+[[./content/2009/09/ff-searchbox-mac.png]]
 
 In my opinion, this layout stinks. The position of the buttons is
 incorrect, because the button shape makes the "Previous" button look

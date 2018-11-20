@@ -1,0 +1,240 @@
+#+TITLE: Truly Ergonomic - full review
+#+REDIRECT_FROM: /2013/07/21/truly-ergonomic-full-review/
+#+DATE: <2013-07-21 Sun>
+
+I've been meaning to write this post for a long time. But now it's
+finally here.
+
+Meanwhile I've been using the Truly Ergonomic computer keyboard (short
+/TECK/) for about 4 months now. Let me go over the features.
+
+** Key placement
+   :PROPERTIES:
+   :CUSTOM_ID: key-placement
+   :END:
+
+At Truly Ergonomic, they call it [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=20_26][Columnar Key placement]]. Basically,
+this means the keys are placed in non-staggered columns. In theory,
+your fingers have to travel less far to reach keys that are not on the
+home row.
+
+#+CAPTION: Truly Ergonomic key placements
+[[./content/2013/07/Truly_Ergonomic_Keyboard-209-Split_Symmetrical.jpg]]
+
+In other reviews I've read this key placement has a steep learning
+curve, but I did not expect this layout would be a big issue.
+
+I was wrong...
+
+The first week I did type lots of errors. I really had to learn to
+touch type over again (my colleagues laughed at me). But I took
+advantage of this, because before I nearly ever used my pinkies while
+touch typing. So while learning to type on the TECK I tuned my touch
+typing skills. Now I type fast on the TECK, even faster than before
+and with less errors.
+
+Only so far I didn't get used to the position of the number keys. It
+feels like they are farther away than on a regular keyboard. But this
+just might a feeling because I often use the keypad or remove my hand
+from the home row when typing numbers on a regular keyboard.
+
+** Split halfs
+   :PROPERTIES:
+   :CUSTOM_ID: split-halfs
+   :END:
+
+This is one of the main reasons why I bought the TECK. To get a more
+ergonomic keyboard.
+
+And, it helps.... It doesn't look like the angle between the two halfs
+is large, but I think it is good enough to have ergonomic benefit.
+
+** Mechanical keys
+   :PROPERTIES:
+   :CUSTOM_ID: mechanical-keys
+   :END:
+
+My TECK is equiped with the Cherry MX Brown switches. And I love them.
+They are really comfortable to type on. They do not require much force
+and really give a tactile response, without being too /clicky/. After
+using mechanical keys for some time, you really hate typing on those
+cheap /rubber dome/ keyboards.
+
+*** Missing & double keypresses
+    :PROPERTIES:
+    :CUSTOM_ID: missing-double-keypresses
+    :END:
+
+But when it comes to the Truly Ergonomic keyboard, these mechanical
+keys have a downside. They can suffer from [[http://elitekeyboards.com/support.php?lang=en#5][/contact bouncing/]].  This
+means in some cases a key press is not registered or registered
+double.
+
+In the first two months I had many keys suffering from this issue. I can
+tell you, this really frustrating! So much that if the thing did not
+cost a few hundred dollar, I think at some point I would have thrown it
+through the window.
+
+After a the first week I was really sure there was something wrong
+with the keyboard, so I contacted Truly Ergonomic. Also I did browse
+the web to find people with the same problem and all I could find was
+1 topic on [[http://geekhack.org/index.php?topic=25055.0][geekhack]]. Some people reported the problem did disappear
+after some time. So I decided to keep using it, hoping the problem
+would dissappear. Meanwhile days passed by.  Some days /all/ keys were
+working good, other days the TECK was a b*tch to work with. After two
+weeks without response from Truly Ergonomic I decided to send another
+email. This time with a bit more pressure, while still being polite.
+
+Another two weeks later, still no response. In that time, the problem
+was almost gone. But I still wanted response from them, so I mailed
+again. This time I was not that polite. I did explain I like the
+keyboard layout and the mechanical keys, but double/missing keypresses
+were just unacceptable for a keyboard in this price range. I really
+did put them under pressure by demanding a return and refund, without
+me paying the shipping costs. Surprisingly, putting them under
+pressure worked. A few days later I did receive a response.
+
+Basically, they told me, a /break-in/ of mechanical keyboard keys is
+not uncommon. Which in mean time did figure out myself. And, of
+course, they pointed me to the Terms & Conditions telling me the
+shipping costs would be at my expense. Eventually they also published
+the issue on their [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=79_83#Keyswitch][Troubleshooting page]].
+
+After 4 months of every day use, I wish I could say all problems are
+gone. But still very rarely the Left Space is missing keypresses. And
+when it does, the problem persist for a while (an hour or so).
+
+I am still mailing the manufacturer about this issue.
+
+** Compactness
+   :PROPERTIES:
+   :CUSTOM_ID: compactness
+   :END:
+
+The keyboard is really compact. And that is awesome.
+
+#+CAPTION: Truly Ergonomic MS Natural 4000 Comparison
+[[./content/2013/07/Truly_Ergonomic_Mechanical_Keyboard_207_Microsoft_Natural_4000_Comparison.jpg]]
+
+** Symmetric layout
+   :PROPERTIES:
+   :CUSTOM_ID: symmetric-layout
+   :END:
+
+All modifier keys are placed symmetrically. So the ~Ctrl~, ~Alt~ &
+~Shift~ are placed on the same position on both sides. This makes it
+really easy to use your opposite hand to press a modifier keys,
+e.g. ~Right Ctrl + C~, ~Left Shift + U~ This has a large ergonomic
+advantage. You never have to reach for keys when having your pinky
+placed on a modifier key.
+
+** Tab, Backspace & ENTER
+   :PROPERTIES:
+   :CUSTOM_ID: tab-backspace-enter
+   :END:
+
+It took me some time to learn their location, but you'll get used to
+it.  Too bad the ~Backspace~ is placed right above the ~ENTER~,
+because you can accidentally press ~ENTER~, while you wanted to erase
+text. Which can be a /problem/ inside a chat window.
+
+** Shift & Ctrl
+   :PROPERTIES:
+   :CUSTOM_ID: shift-ctrl
+   :END:
+
+I do not really like the default placement of all keys. By default the
+~Shift~ is located at the home row and ~Ctrl~ below it. I've tried
+this for a short time, but I did not like it for two reasons:
+
+- On a regular keyboard Shift is placed below the home row.
+- On a regular keyboard I did remap ~Ctrl~ to ~Caps Lock~ (above ~Shift~)
+
+So for me it makes more sense to swap ~Ctrl~ & ~Shift~. Luckely for
+me, Truly Ergonomic provides a [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=79_90#Ctrl_Shift][firmware version]] with these to keys
+swapped. Also the keycaps are easily swapped, because their shape is
+the same.
+
+** Alt
+   :PROPERTIES:
+   :CUSTOM_ID: alt
+   :END:
+
+The position of the ~Alt~ is something I was afraid for. The default
+location is all the way at the bottom corners. For an emacs user this
+is a disaster. So people [[https://twitter.com/xah_lee/status/308865952584458240][suggested]] me to remap the left ~Space~ to
+~Alt~. This places Alt at a similar location as on a regular
+keyboard. Unfortunately this means ~Alt~ is only on the left side of the
+keyboard and ~Space~ is only at the right side of the keyboard
+
+In the beginning it was hard to type ~Space~ with the right hand
+(only). Until now I still use this placement.
+
+But I am thinking about remapping the middle ~Delete~ key to ~Alt~
+(maybe more on that in a next post).
+
+#+CAPTION: Truly Ergonomic Key locations
+[[./content/2013/07/TrulyErgonomic_KeyLocation209.jpg]]
+
+To change the keymapping, I used [[http://www.tucows.com/preview/327616][KeyTweak]] on Windows.
+
+** Mac
+   :PROPERTIES:
+   :CUSTOM_ID: mac
+   :END:
+
+I work on 3 different operating systems: Mac (at home), Windows and
+Linux (at work). I'm already used to switching, and I like the ~Ctrl~
+on the same location for all systems. Because of that, when working
+with the TECK on Mac I do not set [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=79_80#DIP][toggle DIP switch #2]]. But this means
+the ~SuperKey~, at the center of the keyboard, is the only ~⌘~
+key. This key is located between the ~5~ and ~6~. And this does not
+feel right.
+
+So I've used [[https://pqrs.org/macosx/keyremap4macbook/][KeyRemap4MacBook]] to remap the left ~Space~ to ~⌘~. Again
+this gives a very similar feel as regular keyboard. Because I use the
+~⌘~ as [[https://github.com/To1ne/temacco/blob/master/core/temacco-mac-osx.el#L7][Meta key in Emacs]], this makes switching systems even easier.
+
+** Overall
+   :PROPERTIES:
+   :CUSTOM_ID: overall
+   :END:
+
+I like the TECK, a lot. I've been looking on the internet for lot of
+other keyboards. And in my opinion the TECK is the best on the market
+(in its price range). Too bad I've had trouble with missing/double
+keypresses.
+
+** Advice
+   :PROPERTIES:
+   :CUSTOM_ID: advice
+   :END:
+
+Do I recommend the TECK? Actually, I do!
+
+The layout is really great, also is the quality of the mechanical keys.
+The only big downside, Truly Ergonomic sucks at support. And to be
+honest, this also might be a showstopper for me. On the other hand, I am
+also considering to buy a second one for use at home.
+
+*** Alternative
+    :PROPERTIES:
+    :CUSTOM_ID: alternative
+    :END:
+
+So far I did not test many keyboards. But if I had to recommend one
+keyboard different from the TECK, it would be the [[http://www.kinesis-ergo.com/freestyle2_pc.htm][Kinesis Freestyle 2]].
+With the two separate halfs you can use place them similar to the
+TECK, which is a big ergonomic improvement. Also the keys are good,
+although not as good at the TECK. You can buy it at [[http://www.backshop.nl/nl_NL/producten/toetsenborden/ergonomische-toetsenborden/freestyle-solo-toetsenbord-2][backshop.nl]].
+
+One other keyboard which has gained a lot of my interest lately is the
+[[http://ergodox.org/][ErgoDox]]. Soon it will be available on [[https://www.massdrop.com/buy/ergodox][Massdrop]] (you need to register
+first).
+
+** Final note
+   :PROPERTIES:
+   :CUSTOM_ID: final-note
+   :END:
+
+I wrote this post on my Apple keyboard, and now my left pinky hurts.

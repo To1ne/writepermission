@@ -1,0 +1,162 @@
+#+TITLE: Link two static libraries in one application
+#+REDIRECT_FROM: /2009/08/28/link-two-static-libraries-in-one-application/
+#+DATE: <2009-08-28 Fri>
+
+** Introduction
+   :PROPERTIES:
+   :CUSTOM_ID: introduction
+   :END:
+
+This is a technical post about compiling a C/C++ application using
+[[http://en.wikipedia.org/wiki/GNU_Compiler_Collection][gcc]]. This post requires understanding of [[http://en.wikipedia.org/wiki/C_%28programming_language%29][C programming]] and building
+it.
+
+I'm about to discribe a problem that made me lose several hours
+searching for the problem, while the solution was quite simple.
+
+** Situation
+   :PROPERTIES:
+   :CUSTOM_ID: situation
+   :END:
+
+I was working on an application that uses two [[http://en.wikipedia.org/wiki/Static_library][static libraries]], or so
+called archives. My application uses functions from one library, while
+that library uses functions from another library. This situation sound
+complex, but I'll explain using an example.
+
+** Example
+   :PROPERTIES:
+   :CUSTOM_ID: example
+   :END:
+
+The application =helloWorld.app= uses two archives =libArchive1.a= and
+=libArchive2.a=.
+
+*** libArchive1.a
+    :PROPERTIES:
+    :CUSTOM_ID: libarchive1.a
+    :END:
+
+This first archive is build from:
+
+=libArchive1/libArchive1.h=
+
+#+BEGIN_SRC c++
+#include <string>
+std::string GetHello();
+#+END_SRC
+
+=libArchive1/libArchive1.c=
+
+#+BEGIN_SRC c++
+#include "libArchive1.h"
+std::string GetHello() { return std::string("Hello "); }
+#+END_SRC
+
+You can compile these files to an archive using these 2 commands:
+
+#+BEGIN_SRC sh
+g++ -c libArchive1/libArchive1.c -o
+libArchive1/libArchive1.o ar rcs libArchive1/libArchive1.a
+libArchive1/libArchive1.o
+#+END_SRC
+
+*** libArchive2.a
+    :PROPERTIES:
+    :CUSTOM_ID: libarchive2.a
+    :END:
+
+Similar library to =libArchive1.a= with use of the =GetHello()=
+function:
+
+=libArchive2/libArchive2.h=
+
+#+BEGIN_SRC c++
+#include "libArchive1.h"
+std::string GetHelloWorld();
+#+END_SRC
+
+=libArchive2/libArchive2.c=
+
+#+BEGIN_SRC c++
+#include "libArchive2.h"
+std::string GetHelloWorld() { return GetHello() + std::string("World!\n"); }
+#+END_SRC
+
+Compile by:
+
+#+BEGIN_SRC sh
+g++ -c libArchive2/libArchive2.c -IlibArchive1 -o libArchive2/libArchive2.o
+ar rcs libArchive2/libArchive2.a libArchive2/libArchive2.o
+#+END_SRC
+
+This will require to provide the parameter =-I= so the compiler knows
+where to get the file =libArchive1.h=.
+
+*** helloWorld.app
+    :PROPERTIES:
+    :CUSTOM_ID: helloworld.app
+    :END:
+
+Small application printing "Hello World!" to [[http://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29][stdout]] using the
+=GetHelloWorld()= function.
+
+=printHelloWorld.c=
+
+#+BEGIN_SRC c++
+#include <iostream>         // for cout
+#include "libArchive2.h"
+int main(int argc, char* argv[]) {
+   std::cout << GetHelloWorld();
+   return 0;
+}
+#+END_SRC
+
+Now here is where the problem did arise, compiling the application. This
+is what I did:
+
+#+BEGIN_SRC sh
+g++ helloWorldApp/printHelloWorld.c -IlibArchive1 -IlibArchive2 -LlibArchive1 -LlibArchive2 -lArchive1 -lArchive2 -o helloWorld.app
+#+END_SRC
+
+The arguments =-lArchive1= and =-lArchive2= will tell the compiler to
+link in =libArchive1= and =libArchive1=. But I got the following
+
+#+BEGIN_EXAMPLE
+error: undefined reference to GetHello()
+#+END_EXAMPLE
+
+After a long search (the application I was working on was a lot more
+complex, so many things could have been wrong), I found the order of
+importing libraries with the =-l= argument matter. So after switching
+the order of =-lArchive1= =-lArchive2=, the application got compiled
+and did print the text "Hello World!" when running it.
+
+** Conclusion
+   :PROPERTIES:
+   :CUSTOM_ID: conclusion
+   :END:
+
+The order of importing libraries matter. As far as I know it is a
+[[http://gcc.gnu.org/bugzilla/show_bug.cgi?id=6665][compiler bug]] and seems to be solved in newer versions (on Mac OSX 10.5
+it works, on OpenSUSE 11 the error occurs). Anyhow, if you have
+problem with this place the least depended library last in the
+argument list:
+
+#+BEGIN_SRC sh
+g++ appHelloWorld/printHelloWorld.c -IlibArchive1 -IlibArchive2 -LlibArchive1 -LlibArchive2 -lArchive2 -lArchive1 -o helloWorldApp
+#+END_SRC
+
+This will sound really technical for a lot of people, but it took me
+too long solving it to not share it with you. I hope someone will
+benefit from it.
+
+You can download the source code of this example [[/content/2009/08/Link2ArchivesInOneApp.zip][here]].
+
+** Further Reading
+   :PROPERTIES:
+   :CUSTOM_ID: further-reading
+   :END:
+
+- [[http://publications.gbdirect.co.uk/c_book/chapter4/linkage.html][The C Book - Linkage]]
+- [[http://stackoverflow.com/questions/45135/linker-order-gcc][Linker order - GCC]] on stackoverflow.com
