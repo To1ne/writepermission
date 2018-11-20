@@ -7,7 +7,7 @@
    :CUSTOM_ID: how-it-started
    :END:
 
-Back in 2013 I bought the [[/2013/07/truly-ergonomic-full-review/][Truly Ergonomic keyboard]]. I enjoyed it,
+Back in 2013 I bought the [[file:truly-ergonomic-full-review.org][Truly Ergonomic keyboard]]. I enjoyed it,
 well, most of the time. It was my first mechanical keyboard and it did
 boost my interest in mechanical keyboards. And soon I discovered the
 ErgoDox. At the time the design was open-sourced at ergodox.org (no
