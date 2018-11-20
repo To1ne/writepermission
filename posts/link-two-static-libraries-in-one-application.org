@@ -41,14 +41,14 @@ This first archive is build from:
 
 =libArchive1/libArchive1.h=
 
-#+BEGIN_SRC c++
+#+BEGIN_SRC cpp
 #include <string>
 std::string GetHello();
 #+END_SRC
 
 =libArchive1/libArchive1.c=
 
-#+BEGIN_SRC c++
+#+BEGIN_SRC cpp
 #include "libArchive1.h"
 std::string GetHello() { return std::string("Hello "); }
 #+END_SRC
@@ -71,14 +71,14 @@ function:
 
 =libArchive2/libArchive2.h=
 
-#+BEGIN_SRC c++
+#+BEGIN_SRC cpp
 #include "libArchive1.h"
 std::string GetHelloWorld();
 #+END_SRC
 
 =libArchive2/libArchive2.c=
 
-#+BEGIN_SRC c++
+#+BEGIN_SRC cpp
 #include "libArchive2.h"
 std::string GetHelloWorld() { return GetHello() + std::string("World!\n"); }
 #+END_SRC
@@ -103,7 +103,7 @@ Small application printing "Hello World!" to [[http://en.wikipedia.org/wiki/Stan
 
 =printHelloWorld.c=
 
-#+BEGIN_SRC c++
+#+BEGIN_SRC cpp
 #include <iostream>         // for cout
 #include "libArchive2.h"
 int main(int argc, char* argv[]) {
