@@ -88,8 +88,14 @@ PROJECT is the current project."
              :sitemap-format-entry 'rw/org-publish-sitemap-entry)
        (list "blog-static"
              :base-directory "."
-             :exclude (regexp-opt '("public/" "layouts/"))
+             :exclude (regexp-opt '("public/" "layouts/" "redirects/"))
              :base-extension rw--site-attachments
+             :publishing-directory "./public"
+             :publishing-function 'org-publish-attachment
+             :recursive t)
+       (list "blog-redirects"
+             :base-directory "redirects"
+             :base-extension "html"
              :publishing-directory "./public"
              :publishing-function 'org-publish-attachment
              :recursive t)
