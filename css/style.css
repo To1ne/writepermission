@@ -280,17 +280,13 @@ h2, h3, h4, h5, h6 {
 * Top header
 *************************/
 #top {
-  position: absolute;
   width: 100%;
   overflow: hidden;
-  left: 0;
-  top: 0;
 }
 
 #top section {
   display: flex;
   flex-wrap: wrap;
-
 }
 #top h1 {
   color: #B25756;
@@ -331,10 +327,6 @@ h5::before {
   font-weight: normal;
   flex-grow: 1;
   flex-shrink: 2;
-}
-
-main {
-  margin-top: 7em;
 }
 
 /**************************
