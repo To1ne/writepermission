@@ -255,6 +255,9 @@ footer a:hover {
   footer {
     flex-direction: column;
   }
+  footer section {
+    margin-right: 0;
+  }
 }
 
 /******************************
