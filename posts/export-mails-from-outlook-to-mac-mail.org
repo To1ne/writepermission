@@ -66,5 +66,5 @@ client. These are the settings (/from [[http://lifehacker.com/5169684/hotmail-fi
   *Authentication required*? Yes (this matches your POP username and
   password)
 
-  *TLS/SSL require*d? Yes
+  *TLS/SSL required*? Yes
 #+END_QUOTE
