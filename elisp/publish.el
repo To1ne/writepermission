@@ -44,6 +44,19 @@
                 "html" "pdf"))
   "File types that are published as static files.")
 
+(defun rw/format-date-subtitle (file project)
+  "Format the date found in FILE of PROJECT."
+  (format-time-string "posted on %Y-%m-%d" (org-publish-find-date file project)))
+
+(defun rw/org-html-publish-to-html (plist filename pub-dir)
+  "Wrapper function to publish an file to html.
+
+PLIST contains the properties, FILENAME the source file and
+  PUB-DIR the output directory."
+  (plist-put plist :subtitle
+             (rw/format-date-subtitle filename (cons 'rw plist)))
+  (org-html-publish-to-html plist filename pub-dir))
+
 (defun rw/org-publish-sitemap (title list)
   "Default site map, as a string.
 LIST is an internal representation for the files to include, as
@@ -57,11 +70,10 @@ returned by `org-list-to-lisp'.  PROJECT is the current project."
   "Format for sitemap ENTRY, as a string.
 ENTRY is a file name.  STYLE is the style of the sitemap.
 PROJECT is the current project."
-  (let ((creation-date (format-time-string "%Y-%m-%d" (org-publish-find-date entry project))))
-    (format "[[file:%s][%s]] /posted on %s/"
-	    entry
-	    (org-publish-find-title entry project)
-            creation-date)))
+  (format "[[file:%s][%s]] /%s/"
+	  entry
+	  (org-publish-find-title entry project)
+          (rw/format-date-subtitle entry project)))
 
 (defvar rw--publish-project-alist
       (list
@@ -69,7 +81,7 @@ PROJECT is the current project."
              :base-directory "posts"
              :base-extension "org"
              :recursive nil
-             :publishing-function 'org-html-publish-to-html
+             :publishing-function 'rw/org-html-publish-to-html
              :publishing-directory "./public"
              :html-head-include-default-style nil
              :html-head-include-scripts nil
