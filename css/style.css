@@ -21,161 +21,31 @@
 /**************************
 * General styles
 *************************/
-/* Reset values */
-html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  outline: none;
-  font-size: 100%;
-  background: transparent;
-  border: none;
-  text-decoration: none;
-}
-/* Body */
 body {
-  line-height: 24px;
+  line-height: 1.5em;
   font-family: 'Fira Code', Courier, monospace;
 }
-/* Headers */
 h1, h2, h3, h4, h5, h6 {
-  font-style: normal;
-  font-weight: normal;
-  margin: 0 0 21px 0;
   text-transform: lowercase;
 }
-
-h1 {
-  font-size: 1.8em;
-}
-h2 {
-  font-size: 1.3em;
-}
-h3 {
-  font-size: 1.15em;
-}
-h4 {
-  font-size: 1.0em;
-}
-h5 {
-  font-size: 0.85em;
-}
-h6 {
-  font-size: 0.70em;
-}
-/* Paragraphs */
-p {
-  margin: 0 0 21px 0;
-}
-/* Lists */
-ul {
-  list-style: square;
-  margin: 0 0 21px 2.5em;
-}
-ol {
-  list-style-type: decimal;
-  margin: 0 0 21px 3em;
-}
-ol ol {
-  list-style: upper-roman;
-}
-ol ol ol {
-  list-style: lower-roman;
-}
-ol ol ol ol {
-  list-style: upper-alpha;
-}
-ol ol ol ol ol {
-  list-style: lower-alpha;
-}
-ul ul, ol ol, ul ol, ol ul {
-  margin-bottom: 0;
-}
-dl {
-  margin: 0 0 18px 3px;
-}
-dl dt {
-  font-weight: bold;
-  margin: 12px 0 0 0;
-}
-dl dd {
-  margin: 6px 0 0 1.5em;
-}
-/* Text elements */
-strong {
-  font-weight: bold;
-}
-strong strong {
-  font-weight: normal;
-}
-em, cite {
-  font-style: italic;
-}
-em em, cite cite {
-  font-style: normal;
-}
-abbr {
-  cursor: help;
-}
-acronym {
-  text-transform: uppercase;
-  border-bottom: 1px dashed #666666;
-  cursor: help;
-}
-big {
-  font-size: 120%;
-}
-small, sup, sub {
-  font-size: 80%;
-}
-sup {
-  vertical-align: baseline;
-  position: relative;
-  bottom: 0.3em;
-}
-sub {
-  vertical-align: baseline;
-  position: relative;
-  top: 0.3em;
-}
-address {
-  font-style: italic;
-  margin: 0 0 21px 0;
-}
-li address, dd address {
-  margin: 0;
-}
-/* Blockquotes */
 blockquote {
   background: #F2F2F2;
   border-left: 3px solid #BEBEA5;
-  margin: 0 1.5em 1.5em 1.5em;
   padding: 0.2em 1em;
-  font-style: normal;
-}
-blockquote em, blockquote cite {
-  font-style: italic;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
 }
 blockquote p {
-  margin-bottom: 5px;
+  margin: 0.5em 0;
 }
-/* Links */
-a img {
-  border: none;
-}
-
-h1 a, h1 a:link, h1 a:active, h1 a:visited, h1.redir, h1  {
+h1 a, h1 a:link, h1 a:active, h1 a:visited, h1.redir, h1 {
   color: #751816;
 }
 h1 a:hover {
   color: #B25756;
   text-decoration: none;
+}
+h2, h3, h4, h5, h6 {
+  color: #B25756;
+  font-weight: bold;
 }
 a, a:link, a:visited {
   color: #2D8BCF;
@@ -185,10 +55,9 @@ a:hover, a:active {
   color: #D45755;
   text-decoration: underline;
 }
-/* Code */
 pre, code {
-  font-size: 0.9em;
-  font-family: 'PT Mono', Courier, monospace;
+  font-size: 12px;
+  font-family: 'Fira Code', Courier, monospace;
 }
 pre code {
   background: inherit;
@@ -196,58 +65,26 @@ pre code {
 }
 pre {
   background-color: #F2F2F2;
-  /*border: 1px solid #BEBEA5;*/
-  line-height: 21px;
-  margin-bottom: 21px;
+  border: 1px dashed #BEBEA5;
+  line-height: 1.5em;
   overflow: auto;
-  padding: 9px;
 }
 code {
   background: #F2F2F2 none repeat scroll 0 0;
-  padding:0 3px;
+  padding: 0.2em;
 }
-/* Delete and insert */
-ins, dfn {
-  font-style: italic;
-  text-decoration: none;
-  border-bottom: 1px solid #666666;
-}
-del {
-  text-decoration: line-through;
-}
-/* Object */
-object {
-  margin-bottom: 21px;
-}
-/* Forms */
-input, textarea {
-  font-size: 1em;
-  font-family: 'PT Mono', Courier, monospace;
-  padding: 3px;
-}
-:focus {
-  outline: none;
-}
-form label {
-  cursor: pointer;
-}
-option {
-  padding: 1px 3px;
-}
-/* Tables */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 21px;
 }
 th, td {
   text-align: left;
+  vertical-align:top;
 }
-/* Horizontal rule */
+
 hr {
   border: none;
 }
-
 hr::after,
 .sitemap li::after {
   content: "------------";
@@ -256,7 +93,7 @@ hr::after,
   text-align: center;
   font-size: 1.4em;
 }
-/* Images */
+
 img {
   display: block;
   height: auto;
@@ -266,45 +103,9 @@ img {
 figcaption {
   text-align: center;
 }
-/* Content */
 main, footer, header section {
   max-width: 960px;
   margin: 0 auto;
-}
-h2, h3, h4, h5, h6 {
-  color: #B25756;
-  font-weight: bold;
-}
-
-/**************************
-* Top header
-*************************/
-#top {
-  width: 100%;
-  overflow: hidden;
-}
-
-#top section {
-  display: flex;
-  flex-wrap: wrap;
-}
-#top h1 {
-  color: #B25756;
-  font-size: 5.5em;
-  margin-top: 0.2em;
-  flex-shrink: 0;
-  font-variant-ligatures: none;
-}
-
-#top h2 {
-  color: #666666;
-  font-weight: normal;
-  font-size: 1.1em;
-}
-
-#top h2::before,
-footer h1::before {
-  display: none;
 }
 
 h1::before,
@@ -321,6 +122,37 @@ h5::before {
   font-weight: normal;
 }
 
+main header h1 {
+  margin: 0.7em 0 0.4em;
+}
+
+/**************************
+* Top header
+*************************/
+#top {
+  width: 100%;
+  overflow: hidden;
+}
+#top section {
+  display: flex;
+  flex-wrap: wrap;
+}
+#top h1 {
+  font-weight: normal;
+  color: #B25756;
+  font-size: 5.5em;
+  margin: 0.2em 0;
+  flex-shrink: 0;
+  font-variant-ligatures: none;
+}
+#top h2 {
+  color: #666666;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+#top h2::before {
+  display: none;
+}
 #top h1::after {
   content: "------------------------------------------------------------------------------------------------------------------------------------------------------";
   color: #B25756;
@@ -334,17 +166,19 @@ h5::before {
 *************************/
 ul.sitemap {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sitemap li {
-  font-style: normal;
-  font-weight: normal;
-  margin: 0 0 21px 0;
   text-transform: lowercase;
-  font-size: 1.2em;
   display: flex;
   flex-direction: column;
+}
+.sitemap li a {
+  font-size: 2em;
+  margin: 0.7em 0 0.4em;
+  font-weight: bold;
 }
 .sitemap li a,
 .sitemap li a:link,
@@ -357,88 +191,69 @@ ul.sitemap {
   text-decoration: none;
 }
 
-.sitemap i {
+.sitemap i,
+header .subtitle {
   color: #666666;
-  font-size: 0.8em;
   clear: left;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0;
 }
 
 /**************************
-* Sidebar
+* Footer
 *************************/
-#side h1, form {
+footer {
+  display: flex;
+  margin-bottom: 3em;
+}
+footer section {
+  flex: 1 0;
+  margin-right: 0.8em;
+  margin-bottom: 0.8em;
+  border: 3px dashed #DDDDDD;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+footer section:last-child {
+  margin-right: 0;
+}
+footer h3::before {
+  display: none;
+}
+footer h3 {
   margin: 20px;
 }
-#side input {
+footer input {
   width: 100%;
 }
-#side h1 {
-  color: #B25756;
+footer h3 {
   font-style: italic;
   font-size: 1.15em;
 }
-#side ul {
+footer ul {
   color: #B25756;
 }
-#side a {
-  color: #751816;
+footer a {
+  color: #751816 !important;
 }
-#side a:hover {
+footer a:hover {
   text-decoration: underline;
-}
-#side .box {
-  float: left;
-  width: 30%;
-  margin-bottom: 20px;
-  margin-right: 5%;
-  border: 3px dashed #DDDDDD;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  /* eat borders */
-  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-#side .last {
-  float: right;
-  margin-right: 0;
-}
-
-.search-wrapper {
-  margin: 20px;
-  display: block;
 }
 .search-box {
   border: none;
-  width: 100%;
+  display: block;
+  width: 90%;
+  margin: 0 auto 0.8em;
   height: 40px;
 }
 
 /**************************
  * Smaller screens
  *************************/
-@media screen and (max-width: 975px) {
-  /* should be at 960, but this seems to be better */
-  #dasher-fixed {
-    left: 0;
-    margin-left: 0;
-  }
-  #dasher h2 {
-    margin-left: 10px;
-  }
-  #content {
-    margin: 0 10px;
-  }
-  #side {
-    margin: 0 10px;
-  }
-}
 @media screen and (max-width: 600px) {
-  #side .box {
-    margin: 10px 0;
-    width: auto;
-    float: none;
+  footer {
+    flex-direction: column;
   }
 }
 
@@ -459,11 +274,6 @@ ul.sitemap {
 .org-center { margin-left: auto; margin-right: auto; text-align: center; }
 .underline { text-decoration: underline; }
 p.verse { margin-left: 3%; }
-pre {
-  padding: 8pt;
-  overflow: auto;
-  margin: 1.2em;
-}
 pre.src {
   position: relative;
   overflow: visible;
@@ -587,10 +397,8 @@ pre.src-nxml:before { content: 'XML'; }
    (add-to-list 'org-latex-listings-langs '(conf \" \")) in .emacs */
 pre.src-conf:before { content: 'Configuration File'; }
 
-table { border-collapse:collapse; }
 caption.t-above { caption-side: top; }
 caption.t-bottom { caption-side: bottom; }
-td, th { vertical-align:top;  }
 th.org-right  { text-align: center;  }
 th.org-left   { text-align: center;   }
 th.org-center { text-align: center; }
