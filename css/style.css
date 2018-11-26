@@ -67,7 +67,8 @@ pre {
   background-color: #F2F2F2;
   border: 1px dashed #BEBEA5;
   line-height: 1.5em;
-  overflow: auto;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 code {
   background: #F2F2F2 none repeat scroll 0 0;
