@@ -5,6 +5,7 @@
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
+   :ID:       2662b0c9-c628-47a5-9461-6ab0cb0c358b
    :END:
 
 This is a technical post about compiling a C/C++ application using
@@ -17,6 +18,7 @@ searching for the problem, while the solution was quite simple.
 ** Situation
    :PROPERTIES:
    :CUSTOM_ID: situation
+   :ID:       46cae6ce-ab75-4af5-991d-47843ae11511
    :END:
 
 I was working on an application that uses two [[http://en.wikipedia.org/wiki/Static_library][static libraries]], or so
@@ -27,6 +29,7 @@ complex, but I'll explain using an example.
 ** Example
    :PROPERTIES:
    :CUSTOM_ID: example
+   :ID:       002acae8-7ff5-4bd5-b4a1-4b278b26ca35
    :END:
 
 The application =helloWorld.app= uses two archives =libArchive1.a= and
@@ -35,6 +38,7 @@ The application =helloWorld.app= uses two archives =libArchive1.a= and
 *** libArchive1.a
     :PROPERTIES:
     :CUSTOM_ID: libarchive1.a
+    :ID:       4f69f91b-126e-4743-9b24-5a1c039cdeff
     :END:
 
 This first archive is build from:
@@ -64,6 +68,7 @@ libArchive1/libArchive1.o
 *** libArchive2.a
     :PROPERTIES:
     :CUSTOM_ID: libarchive2.a
+    :ID:       b7227ffa-c4ad-4129-a00f-162132d7d3b9
     :END:
 
 Similar library to =libArchive1.a= with use of the =GetHello()=
@@ -96,6 +101,7 @@ where to get the file =libArchive1.h=.
 *** helloWorld.app
     :PROPERTIES:
     :CUSTOM_ID: helloworld.app
+    :ID:       57865bf2-ebdd-4a02-a47e-a32ac8bc5cab
     :END:
 
 Small application printing "Hello World!" to [[http://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29][stdout]] using the
@@ -135,6 +141,7 @@ and did print the text "Hello World!" when running it.
 ** Conclusion
    :PROPERTIES:
    :CUSTOM_ID: conclusion
+   :ID:       887dc297-9084-42e8-a0f3-6f8227d51015
    :END:
 
 The order of importing libraries matter. As far as I know it is a
@@ -156,6 +163,7 @@ You can download the source code of this example [[/content/2009/08/Link2Archive
 ** Further Reading
    :PROPERTIES:
    :CUSTOM_ID: further-reading
+   :ID:       ccfd32d7-a688-41c8-9b7f-00963f3eb31b
    :END:
 
 - [[http://publications.gbdirect.co.uk/c_book/chapter4/linkage.html][The C Book - Linkage]]

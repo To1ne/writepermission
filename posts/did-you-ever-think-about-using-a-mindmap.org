@@ -5,6 +5,7 @@
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
+   :ID:       094d76fd-d495-40bd-86ac-696f150bfe29
    :END:
 
 At work we've been using [[http://www.visual-mind.com/][Visual Mind]].  It is a [[http://mind42.com/mindmaps][mindmapping]]
@@ -20,6 +21,7 @@ for me to decide which one is best.
 ** Basic features
    :PROPERTIES:
    :CUSTOM_ID: basic-features
+   :ID:       7df13642-a8dc-4995-b284-bd2267d6baf6
    :END:
 
 The basic features are for all mindmap webapps the same:
@@ -34,6 +36,7 @@ The basic features are for all mindmap webapps the same:
 ** Mindomo
    :PROPERTIES:
    :CUSTOM_ID: mindomo
+   :ID:       01c427f4-4863-4874-a806-47784ac88354
    :END:
 
 If I have to pick a winner, it would be [[http://www.mindomo.com][Mindomo]]. Probably the best
@@ -46,6 +49,7 @@ tabs, but it actually quite intuitive.
 ** Mindmeister
    :PROPERTIES:
    :CUSTOM_ID: mindmeister
+   :ID:       20722ac5-d0dd-48ed-aa17-1b7f2b3a5e64
    :END:
 
 Another great one is [[http://www.mindmeister.com/][Mindmeister]]. I really like the way it looks, it
@@ -57,6 +61,7 @@ beginning it is not very easy to find the correct tool fast.
 ** Mind42
    :PROPERTIES:
    :CUSTOM_ID: mind42
+   :ID:       c4962430-c65f-423a-9ec1-cbe85a27288e
    :END:
 
 Last but not least is [[http://mind42.com][Mind42]]. The thing I like the most about this one
@@ -70,6 +75,7 @@ make it easier then using the dropdown menu's on the nodes.
 ** Tip
    :PROPERTIES:
    :CUSTOM_ID: tip
+   :ID:       116ac7a8-4008-4a07-8ea1-87de8a94b9bf
    :END:
 
 All the above tools are free, but when using the free version they

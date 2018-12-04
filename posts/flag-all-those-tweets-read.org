@@ -5,6 +5,7 @@
 ** Problem
    :PROPERTIES:
    :CUSTOM_ID: problem
+   :ID:       9e3c72d0-ef53-4abf-ac3b-758d3514bd3e
    :END:
 
 Every time I switched between Twitter client (client at work, client
@@ -16,6 +17,7 @@ to this problem and I think I've found one.
 ** Solution
    :PROPERTIES:
    :CUSTOM_ID: solution
+   :ID:       fcfbd73c-d3b3-4921-a083-6d137f77b549
    :END:
 
 I've created a new Twitter account [[http://twitter.com/fattr][@fattr]]. *fattr* is an acronym for
@@ -29,6 +31,7 @@ received *after* sending the DM are *new*.
 ** Realization
    :PROPERTIES:
    :CUSTOM_ID: realization
+   :ID:       ca1cb6fc-c01c-4f74-84e2-38abb21e2639
    :END:
 
 Using the [[http://classes.verkoyen.eu/twitter/][PHP Twitter]] library of [[http://blog.verkoyen.eu/][Tijs Verkoyen]] @fattr will follow you
@@ -38,6 +41,7 @@ will make it possible to log in at [[http://fattr.tonotdo.com][website]] to read
 ** Future work
    :PROPERTIES:
    :CUSTOM_ID: future-work
+   :ID:       32a60bd0-aebe-435b-8f29-6623324a1804
    :END:
 
 I really need to improve the code of the project and work on the page

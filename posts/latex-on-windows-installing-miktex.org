@@ -3,6 +3,9 @@
 #+DATE: <2009-05-11 Mon>
 
 ** Introduction
+   :PROPERTIES:
+   :ID:       d5f71070-76b0-41e9-a642-d6c1e65dc9d6
+   :END:
 
 In my graduation year I learned to use [[http://en.wikipedia.org/wiki/LaTeX][LaTeX]] and I fell in love with
 it. The output is just so clean and consistent. Meanwhile it has been
@@ -11,6 +14,9 @@ install everything again because my computer got reinstalled. So I'll
 explain you how I did it.
 
 ** MikTeX
+   :PROPERTIES:
+   :ID:       46f55cc1-5f02-4f95-96f5-26bc84af6835
+   :END:
 
 [[http://www.miktex.org/][MikTeX]] consists of an implementation of TeX and a set of related
 programs. MiKTeX only provides the tools necessary to prepare
@@ -47,6 +53,9 @@ pdflatex myfile.tex
 ... to compile your first LaTeX document to PDF.
 
 ** Online
+   :PROPERTIES:
+   :ID:       3761912e-f680-43c5-af05-8fc2f2e5cc17
+   :END:
 On the net I've found two sites who provide compiling LaTeX to PDF
 online, both do a great job:
 

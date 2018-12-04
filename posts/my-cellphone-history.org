@@ -7,6 +7,7 @@ Just wanted to draw a history on the mobile phones I've used in my life.
 ** Nokia 3310 (end 2000 till 2001)
    :PROPERTIES:
    :CUSTOM_ID: nokia-3310-end-2000-till-2001
+   :ID:       efc73a9d-b64f-4a77-971d-1f908db210ae
    :END:
 
 #+CAPTION: Nokia 3310
@@ -26,6 +27,7 @@ friend when I bought my second phone.
 ** Nokia 5510 (2001 till 2004)
    :PROPERTIES:
    :CUSTOM_ID: nokia-5510-2001-till-2004
+   :ID:       0ba354ce-140a-473d-817d-139fb498b39a
    :END:
 
 #+CAPTION: Nokia 5510
@@ -47,6 +49,7 @@ I still have this phone and still works.
 ** Nokia 6820 (2004 till 2006)
    :PROPERTIES:
    :CUSTOM_ID: nokia-6820-2004-till-2006
+   :ID:       c2c40b20-a0ee-436c-ab74-64292326bd4b
    :END:
 
 #+CAPTION: Nokia 6820
@@ -67,6 +70,7 @@ too much for me back then, so I never got it fixed. I still regret it.
 ** Siemens CF62 (a few months in 2006)
    :PROPERTIES:
    :CUSTOM_ID: siemens-cf62-a-few-months-in-2006
+   :ID:       b7bcc7e9-c49b-499a-a1f5-6660de883a8b
    :END:
 
 #+CAPTION: Siemens CF62
@@ -82,6 +86,7 @@ life, ... Never used a Siemens since then.
 ** Motorola Razr V3 (a few months in 2006)
    :PROPERTIES:
    :CUSTOM_ID: motorola-razr-v3-a-few-months-in-2006
+   :ID:       6cc41271-3da9-4733-a865-87db04060c74
    :END:
 
 #+CAPTION: Motorola Razr V3
@@ -98,6 +103,7 @@ I still have this phone, but don't know if it is working.
 ** Nokia 1600 (end 2006 till 2007)
    :PROPERTIES:
    :CUSTOM_ID: nokia-1600-end-2006-till-2007
+   :ID:       995ea1b4-97d9-42d4-bb1c-fcd5318c29bb
    :END:
 
 #+CAPTION: Nokia 1600
@@ -114,6 +120,7 @@ need a phone that doesn't require gentle handling.
 ** Nokia E71 (2007 till present)
    :PROPERTIES:
    :CUSTOM_ID: nokia-e71-2007-till-present
+   :ID:       59a4798b-1a64-4a00-8045-7bcb6c9031b9
    :END:
 
 #+CAPTION: Nokia E71
@@ -130,12 +137,16 @@ weakness of Nokia phones (especially the business types).
 ** What's next?
    :PROPERTIES:
    :CUSTOM_ID: whats-next
+   :ID:       cd0b2b9a-db75-4936-a955-a8b2066f5876
    :END:
 
 I'm not planning to buy a new phone, but if I will I don't know what I
 will buy:
 
 *** Nokia
+    :PROPERTIES:
+    :ID:       a2a14c48-4b2c-4136-9002-7002b5e518f8
+    :END:
 
 I doubt it. Nokia just can't keep up with the competition. The touch
 is quite unresponsive (compared to other brands) and the selection of
@@ -143,6 +154,9 @@ apps is poor. Although there is one change: If they make a new version
 of the 6820, I really would consider buying it.
 
 *** Android
+    :PROPERTIES:
+    :ID:       bedea866-5182-4b8a-aa25-95d788d9e9d4
+    :END:
 
 Some colleagues of my are really satisfied with there Android
 phones. And I like the /openness/ of Android. But I've heard better
@@ -150,12 +164,16 @@ not to buy a Samsung, because they add a lot of junk to the Android
 OS.
 
 *** iPhone
+    :PROPERTIES:
+    :ID:       de07cb82-05d3-42c3-aa50-324b4558109e
+    :END:
 
 Well, you know, iPhone. Do I need to say more?
 
 ** Conclusion
    :PROPERTIES:
    :CUSTOM_ID: conclusion
+   :ID:       6be3060c-3dce-479f-b137-8396451df77a
    :END:
 
 I think it is clear from this post, I really like a mobile device with

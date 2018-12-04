@@ -11,6 +11,7 @@ Meanwhile I've been using the Truly Ergonomic computer keyboard (short
 ** Key placement
    :PROPERTIES:
    :CUSTOM_ID: key-placement
+   :ID:       733ca8a4-391b-4bf3-85f1-901a99abaa0b
    :END:
 
 At Truly Ergonomic, they call it [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=20_26][Columnar Key placement]]. Basically,
@@ -41,6 +42,7 @@ from the home row when typing numbers on a regular keyboard.
 ** Split halfs
    :PROPERTIES:
    :CUSTOM_ID: split-halfs
+   :ID:       fa276141-22fe-4d80-8e75-4b77fdd75531
    :END:
 
 This is one of the main reasons why I bought the TECK. To get a more
@@ -52,6 +54,7 @@ is large, but I think it is good enough to have ergonomic benefit.
 ** Mechanical keys
    :PROPERTIES:
    :CUSTOM_ID: mechanical-keys
+   :ID:       59ace294-cf20-406e-8e4d-089feac023b3
    :END:
 
 My TECK is equiped with the Cherry MX Brown switches. And I love them.
@@ -63,6 +66,7 @@ cheap /rubber dome/ keyboards.
 *** Missing & double keypresses
     :PROPERTIES:
     :CUSTOM_ID: missing-double-keypresses
+    :ID:       fc64d445-41dd-488e-9938-9ae8f288518e
     :END:
 
 But when it comes to the Truly Ergonomic keyboard, these mechanical
@@ -109,6 +113,7 @@ I am still mailing the manufacturer about this issue.
 ** Compactness
    :PROPERTIES:
    :CUSTOM_ID: compactness
+   :ID:       1b8ce8ac-1ac9-445d-a36b-8be7e6acab39
    :END:
 
 The keyboard is really compact. And that is awesome.
@@ -119,6 +124,7 @@ The keyboard is really compact. And that is awesome.
 ** Symmetric layout
    :PROPERTIES:
    :CUSTOM_ID: symmetric-layout
+   :ID:       841c5730-664a-4bbf-919a-7c78354fb39b
    :END:
 
 All modifier keys are placed symmetrically. So the ~Ctrl~, ~Alt~ &
@@ -131,6 +137,7 @@ placed on a modifier key.
 ** Tab, Backspace & ENTER
    :PROPERTIES:
    :CUSTOM_ID: tab-backspace-enter
+   :ID:       8c3faf7a-f948-4817-b2db-79d7be7783c8
    :END:
 
 It took me some time to learn their location, but you'll get used to
@@ -141,6 +148,7 @@ text. Which can be a /problem/ inside a chat window.
 ** Shift & Ctrl
    :PROPERTIES:
    :CUSTOM_ID: shift-ctrl
+   :ID:       cadab82d-c560-412c-ba04-8a2e747f0f56
    :END:
 
 I do not really like the default placement of all keys. By default the
@@ -158,6 +166,7 @@ the same.
 ** Alt
    :PROPERTIES:
    :CUSTOM_ID: alt
+   :ID:       d24e5a2f-088e-4ef2-bf50-893a72e09625
    :END:
 
 The position of the ~Alt~ is something I was afraid for. The default
@@ -181,6 +190,7 @@ To change the keymapping, I used [[http://www.tucows.com/preview/327616][KeyTwea
 ** Mac
    :PROPERTIES:
    :CUSTOM_ID: mac
+   :ID:       00c9c8fb-f79d-4267-9e85-e5f5812b4165
    :END:
 
 I work on 3 different operating systems: Mac (at home), Windows and
@@ -198,6 +208,7 @@ this gives a very similar feel as regular keyboard. Because I use the
 ** Overall
    :PROPERTIES:
    :CUSTOM_ID: overall
+   :ID:       bcf2f101-f783-4518-930f-88d26e332869
    :END:
 
 I like the TECK, a lot. I've been looking on the internet for lot of
@@ -208,6 +219,7 @@ keypresses.
 ** Advice
    :PROPERTIES:
    :CUSTOM_ID: advice
+   :ID:       387ff30a-aa60-4924-babd-6614a48a86d3
    :END:
 
 Do I recommend the TECK? Actually, I do!
@@ -220,6 +232,7 @@ also considering to buy a second one for use at home.
 *** Alternative
     :PROPERTIES:
     :CUSTOM_ID: alternative
+    :ID:       517c1cc6-a9ee-4916-b599-c786154ca631
     :END:
 
 So far I did not test many keyboards. But if I had to recommend one
@@ -235,6 +248,7 @@ first).
 ** Final note
    :PROPERTIES:
    :CUSTOM_ID: final-note
+   :ID:       bd2d8863-7ca9-494a-b769-85616c336aa2
    :END:
 
 I wrote this post on my Apple keyboard, and now my left pinky hurts.

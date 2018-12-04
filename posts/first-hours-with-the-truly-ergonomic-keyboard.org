@@ -5,6 +5,7 @@
 ** First feel
    :PROPERTIES:
    :CUSTOM_ID: first-feel
+   :ID:       2676323c-27de-4568-9bc0-aa38139388ac
    :END:
 
 Yesterday I received my [[http://www.trulyergonomic.com/store/index.php?route=product/category&path=78#Model-207][Truly Ergonomic]] keyboard. At first, it feels
@@ -14,6 +15,7 @@ again. I am constantly looking at the keyboard to locate the keys.
 ** Ctrl & Shift
    :PROPERTIES:
    :CUSTOM_ID: ctrl-shift
+   :ID:       058b02f1-8794-4785-bd8a-1957a75672e4
    :END:
 
 I am a heavy emacs user, so I constantly use ~Ctrl~. Therefore I had
@@ -25,6 +27,7 @@ firmware]] that will swap these keys.
 ** Alt/Meta
    :PROPERTIES:
    :CUSTOM_ID: altmeta
+   :ID:       95c452d2-7c1f-454f-ba3d-e8f3f042a8ab
    :END:
 
 This is something I was afraid for. The default location of ~Alt~ is
@@ -37,6 +40,7 @@ Space with my left hand. And it will be hard to lose of this habit...
 ** Mac
    :PROPERTIES:
    :CUSTOM_ID: mac
+   :ID:       78501e09-c23e-47cc-ae0d-37140769f506
    :END:
 
 I work on 3 different operating systems: Mac (at home), Windows and
@@ -50,6 +54,7 @@ fix this problem?
 ** Tab, Backspace & ENTER
    :PROPERTIES:
    :CUSTOM_ID: tab-backspace-enter
+   :ID:       1e072a09-fa3a-4a0f-81f5-d48961c18074
    :END:
 
 It would take so me time to learn their location, but I'm pretty sure
@@ -58,6 +63,7 @@ I'll get used to these quickly.
 ** Key arrangement
    :PROPERTIES:
    :CUSTOM_ID: key-arrangement
+   :ID:       0b5b6203-d449-45fe-85d5-5f68b9bb4c08
    :END:
 
 It also will require some practice, more than expected. I've noticed
@@ -67,6 +73,7 @@ to use my pinkies). But I'm sure it will pay of at the end.
 ** Mechanical keys
    :PROPERTIES:
    :CUSTOM_ID: mechanical-keys
+   :ID:       f1f454c0-0cea-499b-a441-2da28fce33d8
    :END:
 
 The keys are great! The required pressure is good and the sound they
@@ -75,6 +82,7 @@ make is gentle but provides a decent feedback.
 ** Overall
    :PROPERTIES:
    :CUSTOM_ID: overall
+   :ID:       981e52af-6f0f-4c06-b049-df51ece81e72
    :END:
 
 I try to use my keyboard for everything, but at the moment I'm grabbing

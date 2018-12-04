@@ -5,6 +5,7 @@
 ** Problem
    :PROPERTIES:
    :CUSTOM_ID: problem
+   :ID:       cb66bb1f-3c18-4dc7-9202-7f5ca0ce88ed
    :END:
 
 I wanted to try gVim (Vim on Windows with a GUI) on my Vista
@@ -18,6 +19,7 @@ it. But I've found a way.
 ** Solution
    :PROPERTIES:
    :CUSTOM_ID: solution
+   :ID:       dd90ce54-bb98-4cbb-8f68-b38d2ee0fa33
    :END:
 
 Add the following lines at the top of the file
@@ -34,6 +36,7 @@ That's it, just restart and everything should be in English.
 ** Additional:
    :PROPERTIES:
    :CUSTOM_ID: additional
+   :ID:       a4a1d15e-de05-4c6a-902b-aec2f7cab8e4
    :END:
 
 To modify the window size, add:

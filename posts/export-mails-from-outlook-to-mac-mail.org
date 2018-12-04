@@ -5,6 +5,7 @@
 ** Problem
    :PROPERTIES:
    :CUSTOM_ID: problem
+   :ID:       2224ba02-c0b6-42f3-9b1b-b24e79a90f65
    :END:
 
 Recently I've bought a new iMac. Real great machine, but I used to be
@@ -22,6 +23,7 @@ didn't want to pay for a tool I only use once.
 ** Solution
    :PROPERTIES:
    :CUSTOM_ID: solution
+   :ID:       29b0f8eb-15cf-42b5-95c8-ae38128c302f
    :END:
 
 Mac Mail support import from [[http://www.mozillamessaging.com/en-US/thunderbird/][Mozilla Thunderbird]]. Thunderbird is a
@@ -45,6 +47,7 @@ mails are stored.
 ** Additional
    :PROPERTIES:
    :CUSTOM_ID: additional
+   :ID:       19909959-8d36-4214-9f3a-3e53fcc23074
    :END:
 
 Recently Hotmail has enabled POP3. So you can easily use this to

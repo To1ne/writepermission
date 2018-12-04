@@ -5,6 +5,7 @@
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
+   :ID:       3316108c-a7c2-43b7-a836-8a7c336e345c
    :END:
 
 In a search for a great webapp I ran into a problem: advertisements
@@ -15,6 +16,7 @@ this I've used some Firefox Addons...
 ** First addons: Stylish (& Firebug)
    :PROPERTIES:
    :CUSTOM_ID: first-addons-stylish-firebug
+   :ID:       83a620f9-1536-483c-9ee9-2388179041f1
    :END:
 
 [[https://addons.mozilla.org/en-US/firefox/addon/2108][Stylish]] is a Firefox addon which allows to modify the CSS of pages you
@@ -48,6 +50,7 @@ and with the modification the =#yui-main= uses full page width.
 ** Second addon: NoScript
    :PROPERTIES:
    :CUSTOM_ID: second-addon-noscript
+   :ID:       6b902cdc-1493-4099-87eb-4d69722c8c66
    :END:
 
 [[https://addons.mozilla.org/en-US/firefox/addon/722][NoScript]] is a Firefox Addon which allows you to block JavaScript on
@@ -65,6 +68,7 @@ screen and you'll have to remove them with previous addon.
 ** Conclusion
    :PROPERTIES:
    :CUSTOM_ID: conclusion
+   :ID:       dee286fc-418a-4152-83a5-7671ab53971c
    :END:
 
 So you see, it's often easy to remove advertisements. But you'll

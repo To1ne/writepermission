@@ -5,6 +5,7 @@
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
+   :ID:       c1cfcc84-f2d3-4d53-be98-2216bc694e1e
    :END:
 
 One of the hot topics of the last years is [[http://en.wikipedia.org/wiki/Usability][usability]]. Consistency can
@@ -15,6 +16,7 @@ systems: Linux, Windows and Mac OSX.
 ** Example 1: Windows
    :PROPERTIES:
    :CUSTOM_ID: example-1-windows
+   :ID:       bbbb654a-2375-442f-90fa-90aa4f210c66
    :END:
 
 On Windows shows the searchbar like this:
@@ -29,6 +31,7 @@ the left will make it easier to push it.
 ** Example 2: Linux
    :PROPERTIES:
    :CUSTOM_ID: example-2-linux
+   :ID:       22ba6455-dbb8-4953-86b2-b2e5504a69af
    :END:
 
 Next image shows how the searchbar looks on Linux (OpenSUSE 11 with
@@ -43,6 +46,7 @@ do and the position of the buttons makes sense.
 ** Example 3: Mac OSX
    :PROPERTIES:
    :CUSTOM_ID: example-3-mac-osx
+   :ID:       17fcfaba-7e52-44a2-99f9-67272aa7dc6a
    :END:
 
 On Mac OSX 10.5 the seachbar looks like this:
@@ -57,6 +61,7 @@ like "Next" and vice versa.
 ** Conclusion
    :PROPERTIES:
    :CUSTOM_ID: conclusion
+   :ID:       89b9bbb7-d4c6-4803-aab2-b12114dcafd8
    :END:
 
 I know there are limit on these different OS's about what you can do

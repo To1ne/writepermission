@@ -5,6 +5,7 @@
 ** Problem
    :PROPERTIES:
    :CUSTOM_ID: problem
+   :ID:       ec06665f-0686-46dd-b144-3586e6ed0240
    :END:
 
 I am a Vista user, I'm not very proud of it but can't afford a Mac at
@@ -18,6 +19,7 @@ ugly blue, see it for yourself:
 ** Solution
    :PROPERTIES:
    :CUSTOM_ID: solution
+   :ID:       32b15f21-b6c9-455a-a434-57b440e895c5
    :END:
 
 I not really in to using themes for your browser, because most of the
@@ -34,6 +36,7 @@ after install and reboot your menu buttons look like this:
 ** Additional
    :PROPERTIES:
    :CUSTOM_ID: additional
+   :ID:       a45127cf-cd1e-4dca-824d-916102708e03
    :END:
 
 If you like the blueish Vista like buttons you can try the [[https://addons.mozilla.org/en-US/firefox/addon/6839][Vista on XP]]

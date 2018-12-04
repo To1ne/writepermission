@@ -5,6 +5,7 @@
 ** How it started
    :PROPERTIES:
    :CUSTOM_ID: how-it-started
+   :ID:       033ca02e-b871-4008-a7f2-d6bc6d13c129
    :END:
 
 Back in 2013 I bought the [[file:truly-ergonomic-full-review.org][Truly Ergonomic keyboard]]. I enjoyed it,
@@ -24,6 +25,7 @@ to putting it together myself.
 ** Assembly
    :PROPERTIES:
    :CUSTOM_ID: assembly
+   :ID:       c9179db2-a93f-4135-9f9e-9c5a0a7353f4
    :END:
 
 I placed my order in August, but it took until November before the
@@ -69,6 +71,7 @@ so everyone should be able to build their own ErgoDox.
 ** Cherry MX Blue
    :PROPERTIES:
    :CUSTOM_ID: cherry-mx-blue
+   :ID:       84c664a1-0e14-4692-bcf9-293292a66e2e
    :END:
 
 I bought the ErgoDox with Cherry MX Blue switches. The TECK I owned
@@ -89,6 +92,7 @@ Brown sound and this makes (IMHO) the sound of Brown less distractive.
 *** Damper rings
     :PROPERTIES:
     :CUSTOM_ID: damper-rings
+    :ID:       2147ece6-db82-4e1a-a564-5788ee8a8d58
     :END:
 
 In February 2015 I bought me some TEX Cherry MX Rubber O-Rings on
@@ -108,6 +112,7 @@ sound like Brown switches, but it is better.
 ** Layout
    :PROPERTIES:
    :CUSTOM_ID: layout
+   :ID:       12fdd360-4072-4ada-9a52-0e365123b938
    :END:
 
 After being used to the TECK, I had to learn to type on this keyboard
@@ -129,6 +134,7 @@ stress in your hands.
 *** EZ configurator
     :PROPERTIES:
     :CUSTOM_ID: ez-configurator
+    :ID:       ac1caa57-21c8-4c93-ac82-10e1b8562631
     :END:
 
 [[http://ergodox-ez.com/][ErgoDox EZ]], manufacturers of completely built ErgoDoxes, recently
@@ -139,6 +145,7 @@ configurator and now the media keys (~Volume Up~ / ~Down~, ~Play~ / ~Pause~,
 ** Thumb keys
    :PROPERTIES:
    :CUSTOM_ID: thumb-keys
+   :ID:       06f690a2-bf6b-42df-a746-b089d53a7499
    :END:
 
 I really like the thumb keys on the ErgoDox. The TECK also has some
@@ -149,6 +156,7 @@ the ErgoDox is much more comfortable.
 ** Stabilizers
    :PROPERTIES:
    :CUSTOM_ID: stabilizers
+   :ID:       3f4ed073-1faf-495d-9417-c1a45d3b7f7e
    :END:
 
 The ErgoDox version I own does not have stabilizers on the 1x2.00 keys
@@ -167,6 +175,7 @@ ErgoDox sold on Massdrop comes with stabilizers for the thumb keys.
 ** Conclusion
    :PROPERTIES:
    :CUSTOM_ID: conclusion
+   :ID:       761b129f-678e-4f65-bd6a-fac950d11e74
    :END:
 
 I love my ErgoDox. It's the best keyboard I own, so far. And I would
@@ -191,6 +200,7 @@ professional company.
 ** What's next
    :PROPERTIES:
    :CUSTOM_ID: whats-next
+   :ID:       c7e278f8-80b7-4d0b-b136-f6f09ab4dfa2
    :END:
 
 I have pre-ordered a [[https://shop.keyboard.io][keyboard.io]] and I hope it will arrive before the

@@ -5,6 +5,7 @@
 ** Introduction
    :PROPERTIES:
    :CUSTOM_ID: introduction
+   :ID:       3d0517a5-dc73-4f6e-aa12-992cb73a69c0
    :END:
 
 Recently I ran into an article about using [[http://git-scm.com/][git]] to upload your site
@@ -16,6 +17,7 @@ sounded more simple than doing it... .
 ** Requirements
    :PROPERTIES:
    :CUSTOM_ID: requirements
+   :ID:       988fa679-5011-4b7e-adb8-d16ea23e6e77
    :END:
 
 - You need to have [[http://en.wikipedia.org/wiki/Secure_Shell][ssh]] access to your server.
@@ -23,6 +25,7 @@ sounded more simple than doing it... .
 ** Finding git
    :PROPERTIES:
    :CUSTOM_ID: finding-git
+   :ID:       b7685ee7-57bd-4e55-8ad9-3a0273e13f25
    :END:
 
 Before we can download =git=, we need to know which Linux distribution
@@ -48,6 +51,7 @@ uname -p
 ** Downloading git
    :PROPERTIES:
    :CUSTOM_ID: downloading-git
+   :ID:       c16940c8-03f5-4b8c-a28f-426e01d64784
    :END:
 
 Next we need to download =git= from somewhere. Probably you can find
@@ -67,6 +71,7 @@ Now you have the =.rpm= on your server.
 ** Installing git
    :PROPERTIES:
    :CUSTOM_ID: installing-git
+   :ID:       7b4ba719-3404-4e03-b4ae-f3a7749448d1
    :END:
 
 This =rpm= needs to be installed, but you won't be able to use the
@@ -99,6 +104,7 @@ out and in again.
 ** Note
    :PROPERTIES:
    :CUSTOM_ID: note
+   :ID:       740e9c44-fc0e-4157-b3ed-9d4be7176249
    :END:
 
 You can use =git= just by typing the =git= command. But =git init=
@@ -120,6 +126,7 @@ the correct path for templates.
 ** Possible problems
    :PROPERTIES:
    :CUSTOM_ID: possible-problems
+   :ID:       49757486-d92a-4c1d-b6d4-990353eec3a6
    :END:
 
 One problem caused me a headache when using =git= to upload my site
@@ -135,6 +142,7 @@ not added to the =$PATH= variable.
 ** Further reading
    :PROPERTIES:
    :CUSTOM_ID: further-reading
+   :ID:       86266c06-9272-40ec-8ab0-dcd1cf757171
    :END:
 
 So now you have =git= up and running on your server and you can use it

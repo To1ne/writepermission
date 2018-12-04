@@ -5,6 +5,7 @@
 ** Welcome
    :PROPERTIES:
    :CUSTOM_ID: welcome
+   :ID:       b9eeb593-93a8-4572-969b-0426917c0411
    :END:
 
 In the last few weeks I came up with a couple of topics where I wanted
