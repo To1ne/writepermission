@@ -1,5 +1,5 @@
 #+TITLE: Did you ever think about using a mindmap?
-#+REDIRECT_FROM: /2009/06/24/did-you-ever-think-about-using-a-mindmap/
+#+REDIRECT_FROM: /2009/06/did-you-ever-think-about-using-a-mindmap/
 #+DATE: <2009-06-24 Wed>
 
 ** Introduction

@@ -1,5 +1,5 @@
 #+TITLE: LaTeX on Windows: Installing MikTeX
-#+REDIRECT_FROM: /2009/05/11/latex-on-windows-installing-miktex/
+#+REDIRECT_FROM: /2009/05/latex-on-windows-installing-miktex/
 #+DATE: <2009-05-11 Mon>
 
 ** Introduction

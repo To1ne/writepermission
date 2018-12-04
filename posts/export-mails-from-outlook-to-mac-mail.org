@@ -1,5 +1,5 @@
 #+TITLE: Export mails from Outlook to Mac Mail
-#+REDIRECT_FROM: /2009/07/27/export-mails-from-outlook-to-mac-mail/
+#+REDIRECT_FROM: /2009/07/export-mails-from-outlook-to-mac-mail/
 #+DATE: <2009-07-27 Mon>
 
 ** Problem

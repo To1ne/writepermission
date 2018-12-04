@@ -1,5 +1,5 @@
 #+TITLE: More useful space, less annoying advertisements
-#+REDIRECT_FROM: /2009/04/27/more-useful-space-less-annoying-advertisements/
+#+REDIRECT_FROM: /2009/04/more-useful-space-less-annoying-advertisements/
 #+DATE: <2009-04-27 Mon>
 
 ** Introduction

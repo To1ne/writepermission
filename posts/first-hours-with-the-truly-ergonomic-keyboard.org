@@ -1,5 +1,5 @@
 #+TITLE: First days with the Truly Ergonomic keyboard
-#+REDIRECT_FROM: /2013/03/12/first-hours-with-the-truly-ergonomic-keyboard/
+#+REDIRECT_FROM: /2013/03/first-hours-with-the-truly-ergonomic-keyboard/
 #+DATE: <2013-03-12 Tue>
 
 ** First feel

@@ -1,5 +1,5 @@
 #+TITLE: Post some tweets in an irregular language
-#+REDIRECT_FROM: /2009/07/18/post-some-tweets-in-an-irregular-language/
+#+REDIRECT_FROM: /2009/07/post-some-tweets-in-an-irregular-language/
 #+DATE: <2009-07-18 Sat>
 
 ** Problem

@@ -1,5 +1,5 @@
 #+TITLE: Hello world!
-#+REDIRECT_FROM: /2009/01/16/hello-world/
+#+REDIRECT_FROM: /2009/01/hello-world/
 #+DATE: <2009-01-16 Fri>
 
 ** Welcome

@@ -1,5 +1,5 @@
 #+TITLE: My cellphone history
-#+REDIRECT_FROM: /2010/12/30/my-cellphone-history/
+#+REDIRECT_FROM: /2010/12/my-cellphone-history/
 #+DATE: <2010-12-30 Thu>
 
 Just wanted to draw a history on the mobile phones I've used in my life.

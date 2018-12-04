@@ -1,5 +1,5 @@
 #+TITLE: Flag All Those Tweets Read
-#+REDIRECT_FROM: /2009/05/17/flag-all-those-tweets-read/
+#+REDIRECT_FROM: /2009/05/flag-all-those-tweets-read/
 #+DATE: <2009-05-17 Sun>
 
 ** Problem

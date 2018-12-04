@@ -1,5 +1,5 @@
 #+TITLE: Link two static libraries in one application
-#+REDIRECT_FROM: /2009/08/28/link-two-static-libraries-in-one-application/
+#+REDIRECT_FROM: /2009/08/link-two-static-libraries-in-one-application/
 #+DATE: <2009-08-28 Fri>
 
 ** Introduction

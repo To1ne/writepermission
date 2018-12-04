@@ -1,5 +1,5 @@
 #+TITLE: Install git on a shared webhost
-#+REDIRECT_FROM: /2009/09/07/install-git-on-a-shared-webhost/
+#+REDIRECT_FROM: /2009/09/install-git-on-a-shared-webhost/
 #+DATE: <2009-09-07 Mon>
 
 ** Introduction

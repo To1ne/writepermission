@@ -1,5 +1,5 @@
 #+TITLE: 3 years with the ErgoDox
-#+REDIRECT_FROM: /2016/10/25/3-years-with-the-ergodox/
+#+REDIRECT_FROM: /2016/10/3-years-with-the-ergodox/
 #+DATE: <2016-10-25 Tue>
 
 ** How it started

@@ -1,5 +1,5 @@
 #+TITLE: Change the gVim menu language
-#+REDIRECT_FROM: /2009/05/06/changing-gvim-menu-language/
+#+REDIRECT_FROM: /2009/05/changing-gvim-menu-language/
 #+DATE: <2009-05-06 Wed>
 
 ** Problem
