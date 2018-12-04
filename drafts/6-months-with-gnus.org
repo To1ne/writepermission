@@ -1,0 +1,75 @@
+#+TITLE: 6 months with gnus
+#+DATE: <2017-05-29 Mon>
+
+/If you want to skip to the part about Gnus itself, [[#the-good][click
+here]]/
+
+** Gnus?
+   :PROPERTIES:
+   :CUSTOM_ID: gnus
+   :END:
+
+Before I get started, let me tell you what Gnus is.
+
+This is what the [[http://gnus.org/about.html][about page]] says about
+Gnus:
+
+#+BEGIN_QUOTE
+  Gnus is a flexible message reader running under GNU Emacs. It supports
+  reading and composing both news and mail. In addition, it is able to
+  use a number of web-based sources as inputs for its groups.
+#+END_QUOTE
+
+So basically, it's a mail client in GNU Emacs. Or at least, that is how
+I use Gnus.
+
+** Why?
+   :PROPERTIES:
+   :CUSTOM_ID: why
+   :END:
+
+Well, as you might know, I am an avid Emacs user. So being able to read
+my email inside Emacs, would make me feel at home.
+
+There are actually a number of email clients for Emacs, amongst them
+being:
+
+- [[https://github.com/wanderlust/wanderlust][WanderLust]]
+- [[http://www.mew.org/en/][Mew]]
+- [[https://notmuchmail.org/][NotMuch]]
+- [[http://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]]
+
+So, why did I choose Gnus?
+
+Well, to be honest I didn't try the alternatives. I choose Gnus because
+many people in the Emacs community use Gnus
+([[https://twitter.com/jwiegley][John Wiegley]],
+[[https://twitter.com/sachac][Sacha Chua]], and many others). So I
+assumed "If they say it's good, I'll trust them on that."
+
+** The setup
+   :PROPERTIES:
+   :CUSTOM_ID: the-setup
+   :END:
+
+So how does it work?
+
+Well, my setup (which I also inspired by the more experienced Emacs
+users) consists of mbsync and Dovecot.
+
+[[http://isync.sourceforge.net/mbsync.html][mbsync]] is a tool that
+synchronizes IMAP4 and Maildir mailboxes. So what it does, the downloads
+all my email to my local filesystem.
+
+[[https://dovecot.org/][Dovecot]] is an IMAP server that I run locally
+which reads the Maildir from my filesystem and serves them locally. Gnus
+in Emacs connects to this local IMAP server.
+
+[[https://github.com/dimitri/mbsync-el][mbsync-el]] is a little Emacs
+package I use to trigger the synchronization between my online email
+account and my local filesystem.
+
+** The good
+   :PROPERTIES:
+   :CUSTOM_ID: the-good
+   :END:

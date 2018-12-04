@@ -18,12 +18,10 @@ clean:
 	rm -rf $(timestamps_dir)
 
 
+mds:=$(wildcard _posts/*.md) $(wildcard _drafts/*.md)
+md_orgs:=$(patsubst %.md,%.org,$(mds))
 
-mds:=$(wildcard _posts/*.md)
-orgs:=$(patsubst %.md,%.org,$(mds))
-
-convert-all: $(orgs)
-	mv _posts posts
+convert-all: $(md_orgs)
 
 %.org: %.md
 	pandoc -f markdown -t org -o $@ $<

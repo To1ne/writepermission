@@ -1,0 +1,20 @@
+#+TITLE: Emacs pure storage
+#+DATE: <2012-10-08 Mon>
+
+** Pure What?
+   :PROPERTIES:
+   :CUSTOM_ID: pure-what
+   :END:
+
+I'm always running emacs built from source. I get the sources from the
+[[http://savannah.gnu.org/projects/emacs/][Official Bazaar repository]].
+There are clean instructions on
+[[http://www.emacswiki.org/emacs/BzrForEmacsCasualDevs][EmacsWiki]] on
+how to use them.
+
+But last week, when I started my fresh build for the first time, the
+=*splash*= buffer showed the message:
+
+#+BEGIN_EXAMPLE
+    http://www.gnu.org/software/emacs/manual/html_node/elisp/Pure-Storage.html
+#+END_EXAMPLE
