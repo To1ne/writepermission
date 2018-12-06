@@ -19,6 +19,7 @@
 
 (require 'org)
 (require 'ox-publish)
+(require 'ox-rss)
 
 (defvar rw-root
   (let ((dir default-directory))
@@ -58,12 +59,13 @@ PLIST contains the properties, FILENAME the source file and
   (org-html-publish-to-html plist filename pub-dir))
 
 (defun rw/org-publish-sitemap (title list)
-  "Default site map, as a string.
+  "Generate site map, as a string.
 LIST is an internal representation for the files to include, as
 returned by `org-list-to-lisp'.  PROJECT is the current project."
   (concat "#+TITLE: " title "\n"
-          "#+OPTIONS: title:nil\n\n"
-          "#+ATTR_HTML: :class sitemap\n"
+          "#+OPTIONS: title:nil\n"
+          "#+ATTR_HTML: :class sitemap\n\n"
+          ; TODO use org-list-to-subtree instead
           (org-list-to-org list)))
 
 (defun rw/org-publish-sitemap-entry (entry style project)
@@ -71,9 +73,49 @@ returned by `org-list-to-lisp'.  PROJECT is the current project."
 ENTRY is a file name.  STYLE is the style of the sitemap.
 PROJECT is the current project."
   (format "[[file:%s][%s]] /%s/"
-	  entry
-	  (org-publish-find-title entry project)
+          entry
+          (org-publish-find-title entry project)
           (rw/format-date-subtitle entry project)))
+
+(defun rw/format-rss-feed-entry (entry style project)
+  "Format ENTRY for the RSS feed.
+ENTRY is a file name.  PROJECT is the current project."
+  (cond ((not (directory-name-p entry))
+         (let* ((file (org-publish--expand-file-name entry project))
+                (title (org-publish-find-title entry project))
+                (date (format-time-string "%Y-%m-%d" (org-publish-find-date entry project)))
+                (link (concat (file-name-sans-extension entry) ".html")))
+           (with-temp-buffer
+             (insert (format "* [[file:%s][%s]]\n" file title))
+             (org-set-property "RSS_PERMALINK" link)
+             (org-set-property "PUBDATE" date)
+             ;; to avoid second update to rss.org by org-icalendar-create-uid
+             (org-id-get-create)
+             (insert-file-contents file)
+             (buffer-string))))
+        ((eq style 'tree)
+         ;; Return only last subdir.
+         (file-name-nondirectory (directory-file-name entry)))
+        (t entry)))
+
+(defun rw/format-rss-feed (title list)
+  "Generate RSS feed, as a string.
+TITLE is the title of the RSS feed.  LIST is an internal
+representation for the files to include, as returned by
+`org-list-to-lisp'.  PROJECT is the current project."
+  (concat "#+TITLE: " title "\n\n"
+          (org-list-to-subtree list '(:icount "" :istart ""))))
+
+(defun rw/org-rss-publish-to-rss (plist filename pub-dir)
+  "Only publish rss.org to rss.
+When FILENAME is anything else, ignore"
+  (if (equal filename "rss.org")
+      (org-rss-publish-to-rss plist filename pub-dir)))
+
+(defvar rw-url "https://writepermission.com")
+(defvar rw-title "rw-r--r-- | writepermission.com")
+
+(makunbound 'rw--publish-project-alist)
 
 (defvar rw--publish-project-alist
       (list
@@ -93,11 +135,29 @@ PROJECT is the current project."
              :html-postamble-format (rw--pre/postamble-format 'postamble)
              :auto-sitemap t
              :sitemap-filename "index.org"
-             :sitemap-title "rw-r--r-- | writepermission.com"
+             :sitemap-title rw-title
              :sitemap-style 'list
              :sitemap-sort-files 'anti-chronologically
              :sitemap-function 'rw/org-publish-sitemap
              :sitemap-format-entry 'rw/org-publish-sitemap-entry)
+       (list "blog-rss"
+             :base-directory "posts"
+             :base-extension "org"
+             :recursive nil
+             :exclude "index.org"
+             :publishing-function 'rw/org-rss-publish-to-rss
+             :publishing-directory "./public"
+             :rss-extension "xml"
+             :html-link-home rw-url
+             :html-link-use-abs-url t
+             :html-link-org-files-as-html t
+             :auto-sitemap t
+             :sitemap-filename "rss.org"
+             :sitemap-title rw-title
+             :sitemap-style 'list
+             :sitemap-sort-files 'anti-chronologically
+             :sitemap-function 'rw/format-rss-feed
+             :sitemap-format-entry 'rw/format-rss-feed-entry)
        (list "blog-static"
              :base-directory "."
              :exclude (regexp-opt '("public/" "layouts/" "redirects/"))
@@ -112,7 +172,7 @@ PROJECT is the current project."
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "site"
-             :components '("blog-posts"))
+             :components '("blog-posts" "blog-rss"))
        ))
 
 (defun rw-publish-all ()

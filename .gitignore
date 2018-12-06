@@ -3,8 +3,9 @@
 # Where old import data is
 _import/
 
-# Auto generated index
+# Auto generated index & rss
 posts/index.org
+posts/rss.org
 
 # Output
 public/
