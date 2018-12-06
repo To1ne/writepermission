@@ -14,7 +14,7 @@ git push origin master
 n=0
 until [ $n -ge 60 ]
 do
-    http_code=$(curl -s -o /dev/null -I -w "%{http_code}" https://iotcl.com/.well-known/acme-challenge/$CERTBOT_TOKEN)
+    http_code=$(curl -s -o /dev/null -I -w "%{http_code}" http://$CERTBOT_DOMAIN/.well-known/acme-challenge/$CERTBOT_TOKEN)
     [ $http_code -eq 200 ] && break
     echo "Failure $http_code. Retry in 30 seconds..."
     n=$((n+1))
