@@ -109,7 +109,7 @@ representation for the files to include, as returned by
 (defun rw/org-rss-publish-to-rss (plist filename pub-dir)
   "Only publish rss.org to rss.
 When FILENAME is anything else, ignore"
-  (if (equal filename "rss.org")
+  (if (string-match-p "/rss\\.org$" filename)
       (org-rss-publish-to-rss plist filename pub-dir)))
 
 (defvar rw-url "https://writepermission.com")
@@ -123,6 +123,7 @@ When FILENAME is anything else, ignore"
              :base-directory "posts"
              :base-extension "org"
              :recursive nil
+             :exclude "rss.org"
              :publishing-function 'rw/org-html-publish-to-html
              :publishing-directory "./public"
              :html-head-include-default-style nil
