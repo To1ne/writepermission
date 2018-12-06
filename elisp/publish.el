@@ -63,8 +63,8 @@ PLIST contains the properties, FILENAME the source file and
 LIST is an internal representation for the files to include, as
 returned by `org-list-to-lisp'.  PROJECT is the current project."
   (concat "#+TITLE: " title "\n"
-          "#+OPTIONS: title:nil\n"
-          "#+ATTR_HTML: :class sitemap\n\n"
+          "#+OPTIONS: title:nil\n\n"
+          "#+ATTR_HTML: :class sitemap\n"
           ; TODO use org-list-to-subtree instead
           (org-list-to-org list)))
 
