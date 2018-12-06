@@ -166,6 +166,12 @@ When FILENAME is anything else, ignore"
              :publishing-directory "./public"
              :publishing-function 'org-publish-attachment
              :recursive t)
+       (list "blog-acme"
+             :base-directory ".well-known"
+             :base-extension 'any
+             :publishing-directory "./public/.well-known"
+             :publishing-function 'org-publish-attachment
+             :recursive t)
        (list "blog-redirects"
              :base-directory "redirects"
              :base-extension "html"
