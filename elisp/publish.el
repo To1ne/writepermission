@@ -126,7 +126,7 @@ representation for the files to include, as returned by
 (defun rw/org-rss-publish-to-rss (plist filename pub-dir)
   "Only publish rss.org to rss.
 When FILENAME is anything else, ignore"
-  (if (string-match-p "/rss\\.org$" filename)
+  (if (equal "rss.org" (file-name-nondirectory filename))
       (org-rss-publish-to-rss plist filename pub-dir)))
 
 
