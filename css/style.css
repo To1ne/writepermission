@@ -43,9 +43,14 @@ h1 a:hover {
   color: #B25756;
   text-decoration: none;
 }
-h2, h3, h4, h5, h6 {
+h2, h2 a:link, h2 a:active, h2 a:visited,
+h3, h3 a:link, h3 a:active, h3 a:visited,
+h4, h4 a:link, h4 a:active, h4 a:visited,
+h5, h5 a:link, h5 a:active, h5 a:visited,
+h6, h6 a:link, h6 a:active, h6 a:visited {
   color: #B25756;
   font-weight: bold;
+  text-decoration: none;
 }
 a, a:link, a:visited {
   color: #2D8BCF;
@@ -115,12 +120,18 @@ h3::before,
 h4::before,
 h5::before {
   content: "------------------------------------------------------------------------------------------------------------------------------------------------------";
-  margin-left: -9999px;
-  width: 9999px;
+  margin-left: -150ch;
+  width: 150ch;
   display: inline-block;
-  text-align: right;
   color: #B25756;
   font-weight: normal;
+}
+
+h2:hover::before, h2:target::before,
+h3:hover::before, h3:target::before,
+h4:hover::before, h4:target::before,
+h5:hover::before, h5:target::before {
+  content: "----------------------------------------------------------------------------------------------------------------------------------------------------->";
 }
 
 main header h1 {

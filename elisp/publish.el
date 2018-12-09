@@ -21,6 +21,12 @@
 (require 'ox-publish)
 (require 'ox-rss)
 
+(defvar rw-url "https://writepermission.com"
+  "The URL where this site will be published.")
+
+(defvar rw-title "rw-r--r-- | writepermission.com"
+  "The title of this site.")
+
 (defvar rw-root
   (let ((dir default-directory))
     (while (not (file-directory-p (expand-file-name ".git" dir)))
@@ -32,18 +38,18 @@
   (expand-file-name "layouts" rw-root)
   "Directory where layouts are found.")
 
-(defun rw--pre/postamble-format (type)
-  "Return the content for the pre/postamble of TYPE."
-  `(("en" ,(with-temp-buffer
-             (insert-file-contents (expand-file-name (format "%s.html" type) rw--layouts-directory))
-             (buffer-string)))))
-
 (defvar rw--site-attachments
   (regexp-opt '("jpg" "jpeg" "gif" "png" "svg"
                 "ico" "cur" "css" "js"
                 "eot" "woff" "woff2" "ttf"
                 "html" "pdf"))
   "File types that are published as static files.")
+
+(defun rw--pre/postamble-format (type)
+  "Return the content for the pre/postamble of TYPE."
+  `(("en" ,(with-temp-buffer
+             (insert-file-contents (expand-file-name (format "%s.html" type) rw--layouts-directory))
+             (buffer-string)))))
 
 (defun rw/format-date-subtitle (file project)
   "Format the date found in FILE of PROJECT."
@@ -57,6 +63,17 @@ PLIST contains the properties, FILENAME the source file and
   (plist-put plist :subtitle
              (rw/format-date-subtitle filename (cons 'rw plist)))
   (org-html-publish-to-html plist filename pub-dir))
+
+(defun rw/org-html-format-headline-function (todo todo-type priority text tags info)
+  "Format function for a headline.
+This creates a link for TEXT is INFO contains an :id."
+  (let* ((headline (get-text-property 0 :parent text))
+         (id (or (org-element-property :CUSTOM_ID headline)
+                 (org-element-property :ID headline)))
+         (link (if id
+                   (format "<a href=\"#%s\">%s</a>" id text)
+                 text)))
+    (org-html-format-headline-default-function todo todo-type priority link tags info)))
 
 (defun rw/org-publish-sitemap (title list)
   "Generate site map, as a string.
@@ -112,10 +129,6 @@ When FILENAME is anything else, ignore"
   (if (string-match-p "/rss\\.org$" filename)
       (org-rss-publish-to-rss plist filename pub-dir)))
 
-(defvar rw-url "https://writepermission.com")
-(defvar rw-title "rw-r--r-- | writepermission.com")
-
-(makunbound 'rw--publish-project-alist)
 
 (defvar rw--publish-project-alist
       (list
@@ -134,6 +147,7 @@ When FILENAME is anything else, ignore"
              :html-preamble-format (rw--pre/postamble-format 'preamble)
              :html-postamble t
              :html-postamble-format (rw--pre/postamble-format 'postamble)
+             :html-format-headline-function 'rw/org-html-format-headline-function
              :auto-sitemap t
              :sitemap-filename "index.org"
              :sitemap-title rw-title
@@ -179,7 +193,7 @@ When FILENAME is anything else, ignore"
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "site"
-             :components '("blog-posts" "blog-rss"))
+             :components '("blog-posts" "blog-rss" "blog-static" "blog-redirects"))
        ))
 
 (defun rw-publish-all ()
