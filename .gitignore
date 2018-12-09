@@ -10,3 +10,7 @@ posts/rss.org
 # Output
 public/
 .timestamps/
+
+# Let's Encrypt
+config/
+log/
